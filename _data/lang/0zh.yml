@@ -11,7 +11,7 @@ lng:
   # For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
   # based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
   country: CN
-  switch_title: Cn
+  switch_title: CN
   offer:
     title: 语言
     msg_page: 显示简体中文页面
