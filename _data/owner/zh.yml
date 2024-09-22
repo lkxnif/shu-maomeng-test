@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "你的站点名称"
+brand: "上海大学猫盟"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "你的名字"
+name: "lkxnif"
 
 # home page top header texts
 home:
@@ -48,7 +48,7 @@ meta_common_description: "你的自述。"
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
+  #- github: "lkxnif"
   #- email: ""
   #- linkedin: ""
   #- twitter: ""
