@@ -12,7 +12,7 @@ $main-background-light: #ffffff;
 $button-color-light: #c8e6fe;
 $menu-background-light: #05397f;
 $header-color-light: #5f5e5e;
-$container-background-light: #fff;
+$container-background-light: #FBF1E9;
 $hr-color-light: #eee;
 $anchor-text-color-light: #206EBC;
 
@@ -208,7 +208,7 @@ $anchor-text-color-light: #206EBC;
 // layout: home
 // home/home-heading
 %home-heading-colors-light {
-  --home-heading-message-color: #FBF1E9;
+  --home-heading-message-color: #fff;
   --home-intro-text-header-color: #{$header-color-light};
   --home-heading-shadow-color: #77747455;
 }
