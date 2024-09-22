@@ -9,7 +9,7 @@
 // light color scheme definitions
 $brand-color-light: #ffffff;
 $main-background-light: #ffffff;
-$button-color-light: #053a7f7d;
+$button-color-light: #2f68b5;
 $menu-background-light: #05397f;
 $header-color-light: #5f5e5e;
 $container-background-light: #fff;
@@ -69,8 +69,8 @@ $anchor-text-color-light: #206EBC;
 // default/nav/navigation-buttons
 %navigation-buttons-colors-light {
   --side-top-nav-buttons-text-color: #{$button-color-light};
-  --side-top-nav-buttons-hover-text-color: #303033;
-  --side-top-nav-buttons-active-text-color: #303033;
+  --side-top-nav-buttons-hover-text-color: #ffffff;
+  --side-top-nav-buttons-active-text-color: #ffffff;
 }
 // default/nav/navigation
 %navigation-colors-light {
