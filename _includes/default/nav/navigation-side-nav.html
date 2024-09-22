@@ -2,7 +2,6 @@
   Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
   Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
   Licensed under MIT
-  delete: <p>&nbsp;{{ site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample }}</p>
 {%-endcomment-%}
 
 <nav id="side-nav-container">
@@ -17,7 +16,7 @@
           <a href="{{ site.baseurl }}{{ layout_page_obj.url }}" translate="no">{{ site.data.owner[lng].brand }}</a>
         {% endif -%}
       </div>
-     
+      <p>&nbsp;{{ site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample }}</p>
       {%- if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1 %}
         {% include default/nav/lang-switch.html -%}
       {% endif %}
@@ -34,7 +33,6 @@
         {% include default/nav/navigation-buttons.html effect = site.data.conf.main.side_nav_buttons_hover_effect -%}
       </ul>
     </div>
-    <br>
     <br>
     {%- if site.data.conf.main.contacts and site.data.owner[lng].contacts.size > 0 -%}
       {% include default/nav/contact-links.html -%}
