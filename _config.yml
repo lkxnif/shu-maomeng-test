@@ -75,7 +75,7 @@ whitelist:
 paginate_path: "/tabs/blog/:num"
 # number of post per page
 # make sure this matches with post_query_paginator_post_per_page in _data/conf/posts.yml
-paginate: 
+paginate: 12
 
 ###########################################################
 # jekyll-redirect-from (https://github.com/jekyll/jekyll-redirect-from)
