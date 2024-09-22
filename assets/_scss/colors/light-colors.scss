@@ -97,9 +97,9 @@ $anchor-text-color-light: #206EBC;
 %searchbox-colors-light {
   --searchbox-border-color: #cfcfcf;
   --searchbox-background-color: #DAE0CC;
-  --searchbox-focus-background-color: #fff;
-  --searchbox-focus-text-color: #E8C8BE;
-  --searchbox-focus-border-color: #0e82b0;
+  --searchbox-focus-background-color: #DAE0CC;
+  --searchbox-focus-text-color: #000;
+  --searchbox-focus-border-color: #05397f;
   --searchbox-focus-shadow-color: #175871a0;
 }
 // default/searchresult
