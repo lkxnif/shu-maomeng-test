@@ -104,7 +104,7 @@ $anchor-text-color-light: #206EBC;
 }
 // default/searchresult
 %searchresult-colors-light {
-  --searchresult-color: #E5A18F;
+  --searchresult-color: #afc9b5;
   --searchresult-background-color: #{$container-background-light};
   --searchresult-hover-text-color: #05397f;
   --searchresult-divider-line-color: #{$hr-color-light};
@@ -196,7 +196,7 @@ $anchor-text-color-light: #206EBC;
   --tabs-border-color: #bfbfbf;
   --tab-panel-background-color: #{$menu-background-light};
   --tab-button-active-background-color: #{$menu-background-light};
-  --tab-button-active-text-color: #555;
+  --tab-button-active-text-color: #ffffff;
   --tab-button-background-color: #{$menu-background-light};
   --tab-button-hover-background-color: #{$main-background-light};
   --tab-button-hover-text-color: #555;
