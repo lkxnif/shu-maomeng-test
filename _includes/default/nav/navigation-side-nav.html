@@ -2,6 +2,7 @@
   Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
   Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
   Licensed under MIT
+  delete: <p>&nbsp;{{ site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample }}</p>
 {%-endcomment-%}
 
 <nav id="side-nav-container">
@@ -16,17 +17,12 @@
           <a href="{{ site.baseurl }}{{ layout_page_obj.url }}" translate="no">{{ site.data.owner[lng].brand }}</a>
         {% endif -%}
       </div>
-      <p>&nbsp;{{ site.data.owner[lng].brand_sub_text | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample }}</p>
+     
       <br>
       {%- if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1 %}
         {% include default/nav/lang-switch.html -%}
       {% endif %}
     </div>
-
-    {%-comment-%}
-    <br>
-    {%-endcomment-%}
-    
     {% if site.data.conf.main.side_nav_toggle_button_no_top_nav_buttons and site.data.conf.main.side_nav_toggle_close_button -%}
       <a href="javascript:void(0);" class="side-nav-close" role="button" rel="nofollow">
         <i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>
