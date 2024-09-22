@@ -57,8 +57,8 @@ $anchor-text-color-light: #206EBC;
 // default/nav/lang-switch
 %lang-switch-colors-light {
   --lang-switch-text-color: #{$button-color-light};
-  --lang-switch-hover-text-color: #000;
-  --lang-switch-active-text-color: #000;
+  --lang-switch-hover-text-color: #ffffff;
+  --lang-switch-active-text-color: #ffffff;
 }
 // default/sliding-msg-box
 %sliding-msg-box-colors-light {
@@ -77,7 +77,7 @@ $anchor-text-color-light: #206EBC;
   --side-top-nav-brand-text-color: #{$brand-color-light};
   --side-top-nav-brand-hover-text-color: #{$header-color-light};
   --side-top-nav-background-color: #{$menu-background-light};
-  --side-nav-sub-title-text-color: #6e6e6e;
+  --side-nav-sub-title-text-color: #FBF1E9;
   --side-nav-copyright-text-color: #{$button-color-light};
   --side-nav-right-border-color: #{$hr-color-light};
 }
