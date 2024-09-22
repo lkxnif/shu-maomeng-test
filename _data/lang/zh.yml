@@ -11,7 +11,7 @@ lng:
   # For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
   # based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
   country: CN
-  switch_title: CN
+  switch_title: 中文
   offer:
     title: 语言
     msg_page: 显示简体中文页面
@@ -114,7 +114,7 @@ post:
 # for post-list layout
 post-list:
   title: 博客
-  button_name: 博客
+  button_name: 档案
   upside_down_tabs:
     tab:
       all: All
@@ -145,28 +145,28 @@ home:
 # for archives layout
 archives:
   title: 归档
-  button_name: 归档
-  page_header: 归档
+  button_name: 星星
+  page_header: 星星
 
 # for about layout
 about:
-  title: 关于
-  button_name: 关于
+  title: 我们
+  button_name: 我们
   email_title: 电子邮件
 
 # for links layout
 links:
-  title: 链接
-  button_name: 链接
-  link_text: 网站
-  info_text: 信息
+  title: 盟友
+  button_name: 盟友
+  link_text: 名称
+  info_text: 详情
 
 # for projects layout
 projects:
-  title: 项目
-  button_name: 项目
-  read_more_text: 阅读更多信息
-  read_less_text: 阅读较少信息
+  title: 活动
+  button_name: 活动
+  read_more_text: 更多
+  read_less_text: 收起
 
 # for privacy-policy layout
 privacy-policy:
