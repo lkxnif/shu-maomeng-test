@@ -11,7 +11,7 @@ $brand-color-light: #ffffff;
 $main-background-light: #ffffff;
 $button-color-light: #c8e6fe;
 $menu-background-light: #05397f;
-$header-color-light: #5f5e5e;
+$header-color-light: #000000;
 $container-background-light: #FBF1E9;
 $hr-color-light: #eee;
 $anchor-text-color-light: #206EBC;
@@ -224,10 +224,10 @@ $anchor-text-color-light: #206EBC;
 // archives/archives
 %archives-colors-light {
   --archives-year-text-color: #AFC9B5;
-  --archives-month-text-color: #DAE0CC;
-  --archives-day-text-color: #989898;
+  --archives-month-text-color: #E8C8BE;
+  --archives-day-text-color: #DAE0CC;
   --archives-dot-color: #E5A18F;
-  --archives-line-color: #E8C8BE;
+  --archives-line-color: #E5A18F;
 }
 // layout: links
 // links/link-style
