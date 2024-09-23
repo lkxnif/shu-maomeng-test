@@ -36,9 +36,9 @@ layout: default
   </div>
   <div class="home-intro-text markdown-style">
     {%- if lng == 'en' -%}
-    Had I not seen the sun, I could have borne the shade. But Light a newer Wilderness, My Wilderness has made.————《Had I not seen the Sun》by Emily Dickinson
+    Had I not seen the sun, I could have borne the shade. But Light a newer Wilderness, My Wilderness has made.——《Had I not seen the Sun》by Emily Dickinson
     {%- else -%}
-    我本可以忍受黑暗，如果我不曾见过太阳。然而阳光已使我的荒凉，成为更新的荒凉。————《如果我不曾见过太阳》艾米莉·狄金森
+    我本可以忍受黑暗，如果我不曾见过太阳。然而阳光已使我的荒凉，成为更新的荒凉。——《如果我不曾见过太阳》艾米莉·狄金森
     {%- endif -%}
   </div>
 </div>
