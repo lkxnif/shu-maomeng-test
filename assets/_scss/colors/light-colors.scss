@@ -14,7 +14,7 @@ $menu-background-light: #05397f;
 $header-color-light: #000000;
 $container-background-light: #FBF1E9;
 $hr-color-light: #eee;
-$anchor-text-color-light: #206EBC;
+$anchor-text-color-light: #05397f;
 
 // layout: default
 // default/body-main-styles
@@ -223,8 +223,8 @@ $anchor-text-color-light: #206EBC;
 // layout: archives
 // archives/archives
 %archives-colors-light {
-  --archives-year-text-color: #C2CDB5;
-  --archives-month-text-color: #ECD681;
+  --archives-year-text-color: #AFC9B5;
+  --archives-month-text-color: #E8C8BE;
   --archives-day-text-color: #C6B091;
   --archives-dot-color: #E5A18F;
   --archives-line-color: #E5A18F;
