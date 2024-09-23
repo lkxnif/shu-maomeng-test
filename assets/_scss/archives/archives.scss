@@ -36,7 +36,7 @@
 .archives .year > h2 {
   margin: 0;
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--archives-year-text-color);
   position: absolute;
   right: calc(100% - (var(--archives-line-left-offset) - 10px));
@@ -53,7 +53,7 @@
 .archives .year > .month > h3 {
   margin: 0;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 550;
   color: var(--archives-month-text-color);
   position: absolute;
   right: calc(100% - (var(--archives-line-left-offset) - 10px));
