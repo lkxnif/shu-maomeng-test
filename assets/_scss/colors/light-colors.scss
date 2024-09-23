@@ -105,7 +105,7 @@ $anchor-text-color-light: #05397f;
 // default/searchresult
 %searchresult-colors-light {
   --searchresult-color: #afc9b5;
-  --searchresult-background-color: #{$container-background-light};
+  --searchresult-background-color: #{$searchbox-focus-background-color};
   --searchresult-hover-text-color: #05397f;
   --searchresult-divider-line-color: #{$hr-color-light};
   --searchresult-shadow-color: #00000030;
