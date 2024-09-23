@@ -173,8 +173,8 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Hello
-  welcome: One more day
+  greetings: One more day
+  welcome: 
   sample: Who will write their life
 
 # for contact form

@@ -174,8 +174,8 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: 你好
-  welcome: 新的一天
+  greetings: 新的一天
+  welcome: 
   sample: 它们的一生将由谁来谱写
 
 # for contact form

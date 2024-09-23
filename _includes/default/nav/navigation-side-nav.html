@@ -37,8 +37,8 @@
     {%- if site.data.conf.main.contacts and site.data.owner[lng].contacts.size > 0 -%}
       {% include default/nav/contact-links.html -%}
     {% endif %}
-    <hr id="toc-view-top">
     {%-comment-%}
+    <hr id="toc-view-top">
     <div class="side-nav-footer" translate="no">
       {%- if site.data.conf.main.side_nav_footer %}
         {%- include default/copyright-text.liquid %}
