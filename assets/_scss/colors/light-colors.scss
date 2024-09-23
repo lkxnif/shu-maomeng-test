@@ -97,7 +97,7 @@ $anchor-text-color-light: #206EBC;
 %searchbox-colors-light {
   --searchbox-border-color: #cfcfcf;
   --searchbox-background-color: #DAE0CC;
-  --searchbox-focus-background-color: #ffffff;
+  --searchbox-focus-background-color: #DAE0CC;
   --searchbox-focus-text-color: #000;
   --searchbox-focus-border-color: #05397f;
   --searchbox-focus-shadow-color: #175871a0;
@@ -223,9 +223,9 @@ $anchor-text-color-light: #206EBC;
 // layout: archives
 // archives/archives
 %archives-colors-light {
-  --archives-year-text-color: #AFC9B5;
-  --archives-month-text-color: #E8C8BE;
-  --archives-day-text-color: #DAE0CC;
+  --archives-year-text-color: #C2CDB5;
+  --archives-month-text-color: #ECD681;
+  --archives-day-text-color: #C6B091;
   --archives-dot-color: #E5A18F;
   --archives-line-color: #E5A18F;
 }
