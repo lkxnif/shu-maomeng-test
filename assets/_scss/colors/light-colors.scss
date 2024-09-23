@@ -20,7 +20,7 @@ $anchor-text-color-light: #05397f;
 // default/body-main-styles
 %body-main-styles-colors-light {
   --body-anchor-text-color: #{$anchor-text-color-light};
-  --body-anchor-hover-text-color: #2f6597;
+  --body-anchor-hover-text-color: #8495AD;
   --body-text-color: #6a6a6a;
   --body-header-text-color: #{$header-color-light};
   --body-background-color: #{$main-background-light};
@@ -224,7 +224,7 @@ $anchor-text-color-light: #05397f;
 // archives/archives
 %archives-colors-light {
   --archives-year-text-color: #AFC9B5;
-  --archives-month-text-color: #E8C8BE;
+  --archives-month-text-color: #EDD2C5;
   --archives-day-text-color: #C6B091;
   --archives-dot-color: #E5A18F;
   --archives-line-color: #E5A18F;
