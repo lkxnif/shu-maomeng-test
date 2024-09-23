@@ -38,12 +38,14 @@
       {% include default/nav/contact-links.html -%}
     {% endif %}
     <hr id="toc-view-top">
+    {%-comment-%}
     <div class="side-nav-footer" translate="no">
       {%- if site.data.conf.main.side_nav_footer %}
         {%- include default/copyright-text.liquid %}
         <p>{{ copyright_text_out }}</p>
       {% endif -%}
     </div>
+    {%-endcomment-%}
   </div>
   {%- include default/nav/navigation-side-nav-bottom-buttons.html -%}
 </nav>
