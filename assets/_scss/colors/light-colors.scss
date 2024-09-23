@@ -104,9 +104,9 @@ $anchor-text-color-light: #05397f;
 }
 // default/searchresult
 %searchresult-colors-light {
-  --searchresult-color: #afc9b5;
-  --searchresult-background-color: #{$searchbox-focus-background-color};
-  --searchresult-hover-text-color: #05397f;
+  --searchresult-color: #05397f;
+  --searchresult-background-color:#DAE0CC ;
+  --searchresult-hover-text-color: #000000;
   --searchresult-divider-line-color: #{$hr-color-light};
   --searchresult-shadow-color: #00000030;
 }
