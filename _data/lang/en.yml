@@ -112,8 +112,8 @@ post:
 
 # for post-list layout
 post-list:
-  title: Blog
-  button_name: Blog
+  title: Cat info
+  button_name: Cat info
   upside_down_tabs:
     tab:
       all: All
@@ -143,27 +143,27 @@ home:
 
 # for archives layout
 archives:
-  title: Archive
-  button_name: Archive
-  page_header: Archive
+  title: Stars
+  button_name: Stars
+  page_header: Stars
 
 # for about layout
 about:
-  title: About
-  button_name: About
+  title: Who are we
+  button_name: Who are we
   email_title: email
 
 # for links layout
 links:
-  title: Links
-  button_name: Links
+  title: Sponsor
+  button_name: Sponsor
   link_text: Web site
   info_text: Info
 
 # for projects layout
 projects:
-  title: Projects
-  button_name: Projects
+  title: Activity
+  button_name: Activity
   read_more_text: Read more
   read_less_text: Read less
 

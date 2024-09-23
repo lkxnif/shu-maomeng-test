@@ -113,8 +113,8 @@ post:
 
 # for post-list layout
 post-list:
-  title: 博客
-  button_name: 档案
+  title: 猫谱
+  button_name: 猫谱
   upside_down_tabs:
     tab:
       all: All
