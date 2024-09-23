@@ -20,7 +20,7 @@ $anchor-text-color-light: #05397f;
 // default/body-main-styles
 %body-main-styles-colors-light {
   --body-anchor-text-color: #{$anchor-text-color-light};
-  --body-anchor-hover-text-color: #8495AD;
+  --body-anchor-hover-text-color: #000000;
   --body-text-color: #000000;
   --body-header-text-color: #{$header-color-light};
   --body-background-color: #{$main-background-light};
