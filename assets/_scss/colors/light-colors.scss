@@ -21,7 +21,7 @@ $anchor-text-color-light: #05397f;
 %body-main-styles-colors-light {
   --body-anchor-text-color: #{$anchor-text-color-light};
   --body-anchor-hover-text-color: #8495AD;
-  --body-text-color: #6a6a6a;
+  --body-text-color: #000000;
   --body-header-text-color: #{$header-color-light};
   --body-background-color: #{$main-background-light};
   --body-hr-color: #{$hr-color-light};
@@ -158,7 +158,7 @@ $anchor-text-color-light: #05397f;
   --markdown-styles-kbd-background-color: #888;
   --markdown-styles-kbd-text-color: #eee;
   --markdown-styles-code-background-color: #eee;
-  --markdown-styles-code-text-color: #000000;
+  --markdown-styles-code-text-color: #333;
   --markdown-styles-quote-background-color: #eee;
   --markdown-styles-quote-text-color: #{$header-color-light};
 }
