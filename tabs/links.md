@@ -41,7 +41,7 @@ lng_pair: id_links
 ###########################################################
 page_data:
   main:
-    header: "链接"
+    header: "盟友"
     info: "链接页面描述。"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)

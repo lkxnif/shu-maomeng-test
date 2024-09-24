@@ -41,7 +41,7 @@ lng_pair: id_links
 ###########################################################
 page_data:
   main:
-    header: "Links"
+    header: "Sponsor"
     info: "Your Links page description."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
