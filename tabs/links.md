@@ -54,7 +54,7 @@ page_data:
       color: "#A9C1A3"
     - title: "个人支持"
       type: id_programming
-      color: "#E3BF2B"
+      color: "#EDEA9B"
 
   list:
     -
