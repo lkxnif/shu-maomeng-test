@@ -48,13 +48,13 @@ page_data:
   category:
     - title: "Partner Links"
       type: id_jekyiiliquid
-      color: "gray"
+      color: "#6989B9"
     - title: "Organization Sponsors"
       type: id_webdesign
-      color: "#F4A273"
+      color: "#A9C1A3"
     - title: "Personal Sponsors"
       type: id_programming
-      color: "#62b462"
+      color: "#E3BF2B"
 
   list:
     -
