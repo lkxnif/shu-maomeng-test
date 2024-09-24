@@ -46,13 +46,13 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
+    - title: "友情链接"
       type: id_jekyiiliquid
       color: "gray"
-    - title: "网页设计"
+    - title: "机构支持"
       type: id_webdesign
       color: "#F4A273"
-    - title: "编程"
+    - title: "个人支持"
       type: id_programming
       color: "#62b462"
 

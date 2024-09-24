@@ -120,7 +120,7 @@ post-list:
       all: All
       categories: 分类
       tags: 标签
-      years: 年
+      years: 年份
       clear: 清除
       close: 关闭
       tooltip:

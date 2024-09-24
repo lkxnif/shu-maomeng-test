@@ -46,13 +46,13 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
+    - title: "Partner Links"
       type: id_jekyiiliquid
       color: "gray"
-    - title: "Web Design"
+    - title: "Organization Sponsors"
       type: id_webdesign
       color: "#F4A273"
-    - title: "Programming"
+    - title: "Personal Sponsors"
       type: id_programming
       color: "#62b462"
 
