@@ -4,7 +4,7 @@
 ###########################################################
 page_data:
   main:
-    header: "Projects"
+    header: "Activity"
     info: "Your Project page description."
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
