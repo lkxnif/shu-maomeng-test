@@ -6,7 +6,7 @@ page_data:
   main:
     header: "活动一览"
     info: "你的项目页面描述。"
-    text_color: "白色"
+    text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: ":projects-heading.jpg"
     back_color: "浅蓝色"
