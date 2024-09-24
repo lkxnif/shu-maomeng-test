@@ -48,13 +48,13 @@ page_data:
   category:
     - title: "友情链接"
       type: id_jekyiiliquid
-      color: "gray"
+      color: "#DE7F70"
     - title: "机构支持"
       type: id_webdesign
-      color: "#F4A273"
+      color: "#EDD2C5"
     - title: "个人支持"
       type: id_programming
-      color: "#62b462"
+      color: "#B8C8D8"
 
   list:
     -
