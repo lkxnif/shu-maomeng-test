@@ -13,8 +13,7 @@
 [<img src="https://img.shields.io/github/stars/MrGreensWorkshop/MrGreen-JekyllTheme?style=flat" alt="GitHub stars" data-no-image-viewer>](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#readme)
 [<img src="https://img.shields.io/github/license/MrGreensWorkshop/MrGreen-JekyllTheme" alt="GitHub license" data-no-image-viewer>](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/LICENSE.txt)
 [<img src="https://shields.io/badge/Github%20Sponsors-Support%20me-blue?logo=GitHub+Sponsors" alt="在 GitHub 上支持我" data-no-image-viewer>](https://github.com/sponsors/MrGreensWorkshop "在 GitHub 上支持我")
-[<img src="https://shields.io/badge/Patreon-Support%20me-blue?logo=Patreon" alt="成为我的赞助人" data-no-image-viewer>](https://patreon.com/MrGreensWorkshop "成为我的赞助人")
-[<img src="https://shields.io/badge/Ko--fi-Tip%20me-blue?logo=kofi" alt="通过 Ko-fi 给我提示" data-no-image-viewer>](https://ko-fi.com/MrGreensWorkshop "通过 Ko-fi 给我提示")
+
 
 ---
 
@@ -25,7 +24,7 @@
 </div>
 
 
-##使用教程
+## 使用教程
 
 ### 如果你希望直接使用
 
