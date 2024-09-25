@@ -7,7 +7,7 @@
 >
 > Like firefly , light in dark , don't wait for warmth . 
 >
-> If nothing comes: I will be the only light .
+> If nothing comes : I will be the only light .
 
 ---
 
