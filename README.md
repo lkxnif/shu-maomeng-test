@@ -2,6 +2,8 @@
 
 # 上海大学猫盟 
 
+[<img src="https://shields.io/badge/Github%20Sponsors-Support%20me-blue?logo=GitHub+Sponsors" alt="在 GitHub 上支持我" data-no-image-viewer>](https://github.com/sponsors/ "在 GitHub 上支持我")
+[<img src="https://img.shields.io/github/license/MrGreensWorkshop/MrGreen-JekyllTheme" alt="GitHub license" data-no-image-viewer>](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/LICENSE.txt)
 
 > 有一分热，发一分光，<br>
 > 就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>
@@ -17,27 +19,35 @@
 </div>
 
 
+## 技术支持
+
+### 静态网站生成器：jekyll
+
+* 理由
+
+### 网站图标生成器：Real Favicon Generator
+
+* 理由
+
+### 图标库：Font Awesome
+
+* 理由
+
 ## 使用教程
-行距
 
 ### 如果你希望直接使用
-行距
 
 ### 如果你希望进行修改
 
 ### 如果你希望做出贡献
 
-
-
-
 ## 贡献者
 
 感谢你们的贡献!
 
-- 
-- 
-- 
-- 
+* 
+* 
+* 
 
 ## 执照
 
