@@ -2,6 +2,10 @@
 
 ## 上海大学猫盟
 
+> 有一分热，发一分光，
+> 就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。
+> 此后如竟没有炬火：我便是唯一的光。
+
 <!-- readme -->
 
 [<img src="https://img.shields.io/github/issues/MrGreensWorkshop/MrGreen-JekyllTheme" alt="GitHub issues" data-no-image-viewer>](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/issues)
