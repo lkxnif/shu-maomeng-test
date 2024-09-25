@@ -1,8 +1,8 @@
 [简体中文] [[English](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#readme)]
 
 # 上海大学猫盟 
+[<img src="https://shields.io/badge/Github%20Sponsors-Support%20me-blue?logo=GitHub+Sponsors" alt="在 GitHub 上支持我" data-no-image-viewer>](https://github.com/sponsors/ "在 GitHub 上支持我")
 [<img src="https://img.shields.io/github/license/MrGreensWorkshop/MrGreen-JekyllTheme" alt="GitHub license" data-no-image-viewer>](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/LICENSE.txt)
-[<img src="https://shields.io/badge/Github%20Sponsors-Support%20me-blue?logo=GitHub+Sponsors" alt="在 GitHub 上支持我" data-no-image-viewer>](https://github.com/sponsors/MrGreensWorkshop "在 GitHub 上支持我")
 
 > 有一分热，发一分光，<br>
 > 就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>
@@ -10,11 +10,6 @@
 
 <!-- readme -->
 
-
-
-
-
----
 
 <div align="center">
   <img src="https://jekyll-theme-mrgreen-demo.mrgreensworkshop.com/assets/img/posts/mock1.jpg" max-height="500" alt="screen_mock">
@@ -27,24 +22,23 @@
 
 ### 如果你希望直接使用
 
-### 如果你希望修改
+### 如果你希望进行修改
+
+### 如果你希望做出贡献
 
 
 
-### 贡献
 
-欢迎拉取请求。请检查问题和拉取请求模板中的说明。
-
-### 贡献者
+## 贡献者
 
 感谢你们的贡献!
 
-- [Vitor DallAcqua](https://github.com/fandangos) 的巴西葡萄牙语翻译。
-- [Jean-Philippe Morissette](https://github.com/JPMorissette) 的法文翻译更正。
-- [fairycn](https://github.com/fairycn) 的简体中文翻译。
-- [Onur Ergünay](https://github.com/onurergunay) 的土耳其语翻译。
+- 
+- 
+- 
+- 
 
-### 执照
+## 执照
 
 正如它所说，在 [MIT 许可证](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/LICENSE.txt), 你可以在任何地方使用这个主题，只要你包括许可证和版权声明。
 
