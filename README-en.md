@@ -3,9 +3,6 @@
 # Shu CatUnion  [<img src="https://shields.io/badge/Github%20Sponsors-Support%20us-blue?logo=GitHub+Sponsors" alt="Support me on GitHub Sponsors" data-no-image-viewer>](https://github.com/sponsors/ "Support me on GitHub Sponsors") [<img src="https://img.shields.io/github/license/MrGreensWorkshop/MrGreen-JekyllTheme" alt="GitHub license" data-no-image-viewer>](https://github.com/lkxnif/shu-maomeng/blob/main/LICENSE.txt)
 
 
-
----
-
 <div align="center">
   <img src="https://jekyll-theme-mrgreen-demo.mrgreensworkshop.com/assets/img/posts/mock1.jpg" max-height="500" alt="screen_mock">
   <br><br>
