@@ -1,9 +1,9 @@
 [简体中文] [[English](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#readme)]
 
-## 上海大学猫盟
+# 上海大学猫盟
 
-> 有一分热，发一分光，<br>
-> 就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br>
+> 有一分热，发一分光，<br><br>
+> 就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。<br><br>
 > 此后如竟没有炬火：我便是唯一的光。<br>
 
 <!-- readme -->
