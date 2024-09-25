@@ -1,4 +1,4 @@
-[简体中文] [[English](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#readme)]
+[简体中文] [[English](https://github.com/lkxnif/shu-maomeng/blob/main/README-en.md#readme)]
 
 # 上海大学猫盟 
 
@@ -30,6 +30,10 @@
 * 理由
 
 ### 图标库：Font Awesome
+
+* 理由
+
+### 徽章生成器：Shields.io
 
 * 理由
 
