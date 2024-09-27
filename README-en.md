@@ -5,7 +5,7 @@
 
 > One heat , light one bit , 
 >
-> Like firefly , light in dark , don't wait for warmth . 
+> Like firefly , light in dark , no need to wait . 
 >
 > If nothing comes : I will be the only light .
 
