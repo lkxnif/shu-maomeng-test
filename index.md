@@ -37,6 +37,23 @@ img: ":home-heading.jpg"
 #published: false
 ---
 
+<link rel="manifest" href="/shu-maomeng/manifest.json">
+<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" href="/shu-maomeng/assets/img/favicons/apple-touch-icon.png">
+<meta name="description" content="上海大学校内流浪猫联盟">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/shu-maomeng/service-worker.js').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 {%- include util/auto-content-generator.liquid -%}

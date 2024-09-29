@@ -1,0 +1,81 @@
+{
+"name": "上海大学猫盟",
+"short_name": "上大猫盟",
+"start_url": "/shu-maomeng/",
+"display": "standalone",
+"description": "上海大学校内流浪猫联盟",
+"lang": "zh-CN",
+"dir": "auto",
+"theme_color": "#ffffff",
+"background_color": "#ffffff",
+"orientation": "any",
+"icons": [
+    {
+        "src": "/shu-maomeng/assets/img/favicons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src": "/shu-maomeng/assets/img/favicons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "/shu-maomeng/assets/img/favicons/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "/shu-maomeng/assets/img/favicons/icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any"
+    }
+],
+
+"screenshots": [
+    {
+        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+        "sizes": "2880x1800",
+        "type": "image/png",
+        "description": "A screenshot of the home page"
+    }
+],
+
+"prefer_related_applications": false,
+"shortcuts": [
+    {
+        "name": "首页",
+        "url": "/shu-maomeng/",
+        "description": "上海大学猫盟首页"
+    },
+    {
+        "name": "猫谱",
+        "url": "/shu-maomeng/tabs/blog/",
+        "description": "查看小猫档案"
+    },
+    {
+        "name": "星星",
+        "url": "/shu-maomeng/tabs/archive.html",
+        "description": "查看过去的小猫"
+    },
+    {
+        "name": "活动",
+        "url": "/shu-maomeng/tabs/projects.html",
+        "description": "查看校内救助活动"
+    },
+    {
+        "name": "盟友",
+        "url": "/shu-maomeng/tabs/links.html",
+        "description": "查看谁在支持我们"
+    },
+    {
+        "name": "我们",
+        "url": "/shu-maomeng/tabs/about.html",
+        "description": "了解我们"
+    }
+]
+}
