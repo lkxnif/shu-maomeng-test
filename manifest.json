@@ -4,6 +4,7 @@
 "short_name": "上大猫盟",
 "short_name_en": "SHU Cats",
 "start_url": "/shu-maomeng/",
+"scope": "/shu-maomeng/",
 "display": "standalone",
 "display_override": ["window-controls-overlay"],
 "description": "上海大学校内流浪猫联盟",

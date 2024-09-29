@@ -28,22 +28,21 @@ layout: util/compress
 <!DOCTYPE html>
 <html lang="{{ lng_code }}">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include default/header/header.html %}
     {% include default/css-include.html %}
     
     <!-- PWA 相关标签 -->
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    {% if lng_code == 'zh-CN' %}
-      <link rel="offline" href="{{ '/offline.html' | relative_url }}">
-    {% else %}
-      <link rel="offline" href="{{ '/offline-en.html' | relative_url }}">
-    {% endif %}
+    <meta name="apple-mobile-web-app-title" content="{{ site.data.owner[lng].brand }}">
+    <meta name="mobile-web-app-capable" content="yes">
     <!-- PWA 相关标签结束 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
    
   </head>
 
@@ -85,15 +84,13 @@ layout: util/compress
     <!-- Service Worker 注册 -->
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('{{ "/service-worker.js" | relative_url }}')
-            .then(function(registration) {
-              console.log('Service Worker 注册成功，范围为:', registration.scope);
-            })
-            .catch(function(error) {
-              console.error('Service Worker 注册失败:', error);
-            });
-        });
+        navigator.serviceWorker.register('{{ "/pwabuilder-sw.js" | relative_url }}')
+          .then(function(registration) {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+          });
       }
     </script>
   </body>

@@ -121,7 +121,9 @@ sass:
 ###########################################################
 exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "CODE_OF_CONDUCT.md", "LICENSE", "docs"]
 
-# 在文件末尾添加
+# 在文件末尾添加或修改
 include:
-  - service-worker.js
+  - pwabuilder-sw.js
   - manifest.json
+  - offline.html
+  - offline-en.html
