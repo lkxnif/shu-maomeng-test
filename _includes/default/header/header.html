@@ -5,7 +5,7 @@
 {%-endcomment-%}
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {% assign page_title = page.title | default: site.data.lang[lng][page.layout].title -%}
 {%- include util/auto-content-post-title-rename.liquid title = page_title -%}
@@ -36,6 +36,10 @@
 
 <!-- Add browserconfig.xml meta tag -->
 <meta name="msapplication-config" content="{{ site.baseurl }}/assets/img/favicons/browserconfig.xml">
+
+<!-- Preload critical assets -->
+<link rel="preload" href="{{ site.baseurl }}/assets/css/main.css" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/js/main.js" as="script">
 
 {%- if page.search_engine_exclude == true %}
   {%-comment-%} follow because all pages have navigation (links) {%-endcomment-%}
@@ -74,9 +78,24 @@
 
   {%- if site.data.conf.main.meta.open_graph %}
     {%- include default/header/meta-open-graph.html %}
-  {%- endif %}
+  {%- endif -%}
 
   {%- if site.data.conf.main.meta.schema_markup %}
     {%- include default/header/meta-schema-markup.html %}
   {%- endif %}
 {%- endif %}
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="{{ site.data.owner[lng].brand }}">
+
+<!-- PWA related meta tags -->
+<meta name="application-name" content="{{ site.data.owner[lng].brand }}">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+

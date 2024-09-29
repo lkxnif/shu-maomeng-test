@@ -7,7 +7,7 @@ lng_pair: id_home
 img: ":home-heading.jpg"
 # publish date (used for seo)
 # if not specified, site.time will be used.
-#date: 2022-03-03 12:32:00 +0000
+date: 2022-03-03 12:32:00 +0000
 
 # for override items in _data/lang/[language].yml
 #title: My title
@@ -17,17 +17,17 @@ img: ":home-heading.jpg"
 
 # seo
 # if not specified, date will be used.
-#meta_modify_date: 2022-03-03 12:32:00 +0000
+meta_modify_date: 2022-03-03 12:32:00 +0000
 # check the meta_common_description in _data/owner/[language].yml
-#meta_description: ""
+meta_description: "上海大学校内流浪猫联盟"
 
 # optional
 # please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
 # image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
-#image_viewer_on: true
+image_viewer_on: true
 # please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
 # image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
-#image_lazy_loader_on: true
+image_lazy_loader_on: true
 # exclude from on site search
 #on_site_search_exclude: true
 # exclude from search engines
@@ -36,25 +36,6 @@ img: ":home-heading.jpg"
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
 ---
-
-<link rel="manifest" href="/shu-maomeng/manifest.json">
-<meta name="theme-color" content="#ffffff">
-<link rel="apple-touch-icon" href="/shu-maomeng/assets/img/favicons/apple-touch-icon.png">
-<meta name="description" content="上海大学校内流浪猫联盟">
-
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/shu-maomeng/service-worker.js').then(function(registration) {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
-
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 {%- include util/auto-content-generator.liquid -%}
 {{ website_info_text_first }}

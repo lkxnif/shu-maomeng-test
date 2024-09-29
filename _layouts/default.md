@@ -30,6 +30,21 @@ layout: util/compress
   <head>
     {% include default/header/header.html %}
     {% include default/css-include.html %}
+    
+    <!-- PWA 相关标签 -->
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    {% if lng_code == 'zh-CN' %}
+      <link rel="offline" href="{{ '/offline.html' | relative_url }}">
+    {% else %}
+      <link rel="offline" href="{{ '/offline-en.html' | relative_url }}">
+    {% endif %}
+    <!-- PWA 相关标签结束 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
   </head>
 
   <body {{ default_dark }}>
@@ -66,5 +81,20 @@ layout: util/compress
     {%- endif %}
 
     {% include default/scripts-include.html -%}
+
+    <!-- Service Worker 注册 -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('{{ "/service-worker.js" | relative_url }}')
+            .then(function(registration) {
+              console.log('Service Worker 注册成功，范围为:', registration.scope);
+            })
+            .catch(function(error) {
+              console.error('Service Worker 注册失败:', error);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
