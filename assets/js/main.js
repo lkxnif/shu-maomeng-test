@@ -114,3 +114,5 @@ layout: util/compress_js
     {% endif -%}
   {% endif -%}
 {%- endif %}
+
+{% include_relative _js/pwa/pwa-features.js %}
