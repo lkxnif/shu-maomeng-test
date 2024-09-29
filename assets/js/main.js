@@ -10,7 +10,7 @@ layout: util/compress_js
 {% include_relative _js/default/tooltip-init.js %}
 {% include_relative _js/default/show-tooltip.js %}
 
-{% if site.data.conf.main.color_scheme_dark -%}
+{% if site.data.conf.main.color_scheme_dark %}
   {% if site.data.conf.main.color_scheme_switch_side_nav or site.data.conf.main.color_scheme_switch_top_nav -%}
     {% include_relative _js/default/nav/color-scheme-switch.js %}
   {%- endif %}
