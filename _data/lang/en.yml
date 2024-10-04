@@ -143,9 +143,9 @@ home:
 
 # for archives layout
 archives:
-  title: Planet
-  button_name: Planet
-  page_header: Planet
+  title: History
+  button_name: History
+  page_header: History
 
 # for about layout
 about:
