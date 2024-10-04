@@ -162,8 +162,8 @@ links:
 
 # for projects layout
 projects:
-  title: Activity
-  button_name: Activity
+  title: Tips
+  button_name: Tips
   read_more_text: Read more
   read_less_text: Read less
 
