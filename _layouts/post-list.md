@@ -11,7 +11,8 @@ layout: default
 
 <div class="post-list-header"></div>
 <div class="post-list-container">
-  {% for post in paginator.posts -%}
+  {% assign non_archived_posts = paginator.posts | where_exp: "post", "post.archive != true" %}
+  {% for post in non_archived_posts -%}
     {% include post-list/post-thumbnail-data.liquid post = post -%}
     {% include post-list/post-thumbnail-html.html
       url = post_url

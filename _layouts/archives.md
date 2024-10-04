@@ -6,7 +6,8 @@
 layout: default
 # The Archives of posts.
 ---
-{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
+{%- assign archived_posts = site.posts | where: "archive", true -%}
+{%- include multi_lng/get-pages-by-lng.liquid pages = archived_posts -%}
 {%- assign postsByYear = lng_pages | sort: 'date' | reverse | group_by_exp:"post", "post.date | date: site.data.lang[lng].date.year" -%}
 <div class="multipurpose-container">
   <h1>{{ site.data.lang[lng].archives.page_header }}</h1>
