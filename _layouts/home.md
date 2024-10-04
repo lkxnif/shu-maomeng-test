@@ -47,8 +47,7 @@ layout: default
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
   <ul class="new-posts">
-  {%- assign sorted_posts = lng_pages | sort: 'date' | reverse -%}
-  {%- for _post in sorted_posts limit: site.data.conf.others.home.new_posts_count_limit -%}
+  {%- for _post in lng_pages limit: site.data.conf.others.home.new_posts_count_limit -%}
     <li>
       {%- assign page_title = _post.title -%}
       {%- include util/auto-content-post-title-rename.liquid title = page_title -%}
@@ -59,7 +58,7 @@ layout: default
     </li>
   {% endfor -%}
     <li>
-      {%- include multi_lng/get-page-by-layout.liquid layout = 'post-list' -%}
+      {%- include multi_lng/get-page-by-layout.liquid layout = 'archives' -%}
       <a href="{{ site.baseurl }}{{ layout_page_obj.url }}">{{ site.data.lang[lng].home.new_posts_show_more_button }}</a>
     </li>
   </ul>

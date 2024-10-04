@@ -394,11 +394,3 @@ youtube:
   # if it's true, and "centered" is not provided to include parameter,
   # video will be horizontally centered to wrapper.
   default_center: false
-
-###########################################################
-#                Others
-###########################################################
-others:
-  home:
-    new_posts: true
-    new_posts_count_limit: 7  # 您可以根据需要调整这个数字
