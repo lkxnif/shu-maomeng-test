@@ -40,12 +40,12 @@
       "description": "查看小猫档案"
     },
     {
-      "name": "星星",
+      "name": "回溯",
       "url": "/shu-maomeng/tabs/archive.html",
       "description": "查看过去的小猫"
     },
     {
-      "name": "活动",
+      "name": "科普",
       "url": "/shu-maomeng/tabs/projects.html",
       "description": "查看校内救助活动"
     },

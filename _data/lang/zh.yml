@@ -145,8 +145,8 @@ home:
 # for archives layout
 archives:
   title: 归档
-  button_name: 星星
-  page_header: 星星
+  button_name: 回溯
+  page_header: 回溯
 
 # for about layout
 about:
@@ -163,8 +163,8 @@ links:
 
 # for projects layout
 projects:
-  title: 活动
-  button_name: 活动
+  title: 科普
+  button_name: 科普
   read_more_text: 更多
   read_less_text: 收起
 

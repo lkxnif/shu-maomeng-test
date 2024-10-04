@@ -78,14 +78,14 @@
         "description_en": "View cat info"
     },
     {
-        "name": "星星",
+        "name": "回溯",
         "name_en": "Stars",
         "url": "/shu-maomeng/tabs/archive.html",
         "description": "查看过去的小猫",
         "description_en": "View Departed Cats"
     },
     {
-        "name": "活动",
+        "name": "科普",
         "name_en": "Activities",
         "url": "/shu-maomeng/tabs/projects.html",
         "description": "查看校内救助活动",
