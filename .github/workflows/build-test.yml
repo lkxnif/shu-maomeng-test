@@ -1,4 +1,4 @@
-name: MrGreen-JekyllTheme jekyll build test
+name: jekyll build test
 
 # on a push or pull request is made on the main branch
 on:
