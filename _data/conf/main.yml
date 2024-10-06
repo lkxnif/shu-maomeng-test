@@ -346,7 +346,7 @@ cookie_consent:
       value: "granted"
       wait_for_update: 500
       # same as domain in _config.yml file
-      cookie_domain: ""
+      cookie_domain: "maomeng.online"
       no_check_box: true
     analytics:
       group: [analytics_storage]
