@@ -190,7 +190,7 @@ side_and_top_nav_buttons:
   - post-list:
     icon: "fa fa-film"
   - archives:
-    icon: "fa fa-star-half-o"
+    icon: "fa-solid fa-calendar-days"
   - projects:
     icon: "fa fa-flag"
   - links:
