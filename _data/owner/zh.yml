@@ -48,9 +48,9 @@ meta_common_description: "你的自述。"
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
+  - bilibili: "484930543"
   - github: "lkxnif/shu-maomeng"
   - email: "lkxnif@gmail.com"
-  - bilibili: "484930543"
   #- linkedin: ""
   #- twitter: ""
   #- mastodon: ""
