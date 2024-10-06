@@ -34,8 +34,15 @@
       </ul>
     </div>
     <br>
+    <!-- Debug: Navigation Side Nav -->
+    <p>Contacts enabled: {{ site.data.conf.main.contacts }}</p>
+    <p>Number of contacts: {{ site.data.owner[lng].contacts.size }}</p>
+    <p>Current language: {{ lng }}</p>
     {%- if site.data.conf.main.contacts and site.data.owner[lng].contacts.size > 0 -%}
+      <!-- Debug: Including contact-links.html -->
       {% include default/nav/contact-links.html -%}
+    {% else %}
+      <!-- Debug: Conditions not met for including contact-links.html -->
     {% endif %}
     {%-comment-%}
     <hr id="toc-view-top">
