@@ -22,19 +22,19 @@
 
     // 需要缓存的资源列表
     const STATIC_CACHE_URLS = [
-        '/shu-maomeng/',
-        '/shu-maomeng/index.html',
-        '/shu-maomeng/404.html',
-        '/shu-maomeng/offline.html',
-        '/shu-maomeng/offline-en.html',
-        '/shu-maomeng/assets/css/main.css',
-        '/shu-maomeng/assets/js/main.js',
-        '/shu-maomeng/assets/img/favicons/android-chrome-192x192.png',
-        '/shu-maomeng/assets/img/favicons/android-chrome-512x512.png',
-        '/shu-maomeng/assets/img/favicons/apple-touch-icon.png',
-        '/shu-maomeng/assets/img/favicons/favicon-32x32.png',
-        '/shu-maomeng/assets/img/favicons/favicon-16x16.png',
-        '/shu-maomeng/assets/img/favicons/site.webmanifest',
+        '/',
+        '/index.html',
+        '/404.html',
+        '/offline.html',
+        '/offline-en.html',
+        '/assets/css/main.css',
+        '/assets/js/main.js',
+        '/assets/img/favicons/android-chrome-192x192.png',
+        '/assets/img/favicons/android-chrome-512x512.png',
+        '/assets/img/favicons/apple-touch-icon.png',
+        '/assets/img/favicons/favicon-32x32.png',
+        '/assets/img/favicons/favicon-16x16.png',
+        '/assets/img/favicons/site.webmanifest',
     ];
 
     // 博客文章页面的正则表达式
