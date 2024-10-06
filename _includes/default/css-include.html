@@ -6,10 +6,14 @@
 
 {% if site.data.conf.main.use_cdn_resources_if_available -%}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome 6.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 {%- else %}
   <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Font Awesome 6.6.0 -->
+  <link href="{{ site.baseurl }}/assets/css/fontawesome.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/brands.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/solid.css" rel="stylesheet">
 {%- endif %}
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
