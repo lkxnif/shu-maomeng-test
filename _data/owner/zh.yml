@@ -48,8 +48,8 @@ meta_common_description: "你的自述。"
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: "lkxnif"
-  #- email: "lkxnif@gmail.com"
+  - github: "lkxnif"
+  - email: "lkxnif@gmail.com"
   #- linkedin: ""
   #- twitter: ""
   #- mastodon: ""
