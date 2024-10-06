@@ -29,12 +29,12 @@ $anchor-text-color-light: #05397f;
 // default/nav/color-scheme-switch
 %color-scheme-switch-colors-light {
   --color-scheme-switch-color: #{$button-color-light};
-  --color-scheme-switch-hover-color: #B8C8D8;
+  --color-scheme-switch-hover-color: #ffffff;
 }
 // default/contact
 %contact-colors-light {
   --contact-icons-color: #{$button-color-light};
-  --contact-icons-hover-color: #303033;
+  --contact-icons-hover-color: #ffffff;
   --contact-header-color: #{$button-color-light};
   > ul > li > a > img {
     filter: invert(70%) sepia(0%) saturate(179%) hue-rotate(158deg)
