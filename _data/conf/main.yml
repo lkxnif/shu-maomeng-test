@@ -249,7 +249,7 @@ contact_form:
 #                Copyright text
 ###########################################################
 # this will add current year to the end of copyright_start_year which is defined in _data/owner/[language].yml
-copyright_add_end_year: false
+copyright_add_end_year: true
 
 # this uses copyright.additional_text defined in _data/lang/[language].yml
 # not recommended if creative_commons is enabled.
@@ -271,7 +271,7 @@ meta:
   # if you enabled add_hreflang in sitemap.xml, make this false. (According to SEO pros, prevent using both. )
   hreflang: true
   # add published date and modified date
-  add_meta_date: false
+  add_meta_date: true
   # please note that google does not use keywords, but other search engines may.
   keywords: true
   google_site_verify: false
