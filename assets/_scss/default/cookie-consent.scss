@@ -41,6 +41,14 @@
   min-width: 400px;
   white-space: nowrap;
   color: var(--consent-settings-text-color);
+  a {
+    color: var(--consent-settings-text-color); // 正常状态的链接颜色
+    transition: color 0.3s ease; // 添加颜色变化的过渡效果
+
+    &:hover {
+      color: var(--consent-settings-link-hover-color); // hover 时的颜色
+    }
+  }
 }
 
 .consent-settings > h5 {
@@ -90,6 +98,12 @@
 
 .consent-settings .info-text a {
   font-weight: 400;
+  color: var(--consent-settings-text-color); // 正常状态的链接颜色
+  transition: color 0.3s ease; // 添加颜色变化的过渡效果
+
+  &:hover {
+    color: var(--consent-settings-link-hover-color); // hover 时的颜色
+  }
 }
 
 .consent-settings .info {
