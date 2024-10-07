@@ -116,7 +116,7 @@ $anchor-text-color-light: #05397f;
   --consent-bar-shadow-color: #00000055;
 }
 %consent-settings-colors-light {
-  --consent-settings-header-color: #{$header-color-light};
+  --consent-settings-header-color: #ffffff;
   --consent-settings-active-text-color: #{$anchor-text-color-light};
 }
 // default/lang-offer
@@ -133,7 +133,7 @@ $anchor-text-color-light: #05397f;
   --button-hover-border-color: #adadad;
   --button-hover-background-color: #eee;
   --button-active-shadow-color: #00000020;
-  --button-priority-color: #ffffff;
+  --button-priority-color: #000;
   --button-priority-background-color: #5ac0c57d;
 }
 // common/slide-switch
