@@ -34,7 +34,7 @@ $anchor-text-color-light: #05397f;
 // default/contact
 %contact-colors-light {
   --contact-icons-color: #{$button-color-light};
-  --contact-icons-hover-color: #303033;
+  --contact-icons-hover-color: #ffffff;
   --contact-header-color: #{$button-color-light};
   > ul > li > a > img {
     filter: invert(70%) sepia(0%) saturate(179%) hue-rotate(158deg)
@@ -203,7 +203,7 @@ $anchor-text-color-light: #05397f;
   --tab-button-text-color: #{$button-color-light};
   --tab-content-button-text-color: #{$button-color-light};
   --tab-content-button-hover-text-color: #ffffff;
-  --post-query-result-title-color: #555;
+  --post-query-result-title-color: #ffffff;
 }
 // layout: home
 // home/home-heading
