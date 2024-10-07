@@ -40,14 +40,25 @@
   max-width: 500px;
   min-width: 400px;
   white-space: nowrap;
-  color: var(--consent-settings-text-color);
-  a {
-    color: var(--consent-settings-text-color); // 正常状态的链接颜色
-    transition: color 0.3s ease; // 添加颜色变化的过渡效果
+  
+  // 针对文本的样式
+  &, p, td, th, .info-text {
+    color: var(--consent-settings-text-color);
+  }
+
+  // 链接样式
+  a:not(.btn-base) {
+    color: var(--consent-settings-text-color);
+    transition: color 0.3s ease;
 
     &:hover {
-      color: var(--consent-settings-link-hover-color); // hover 时的颜色
+      color: var(--consent-settings-link-hover-color);
     }
+  }
+
+  // 保持按钮样式不变
+  .btn-base {
+    // 这里可以添加任何按钮特定的样式，或者留空以使用默认样式
   }
 }
 
