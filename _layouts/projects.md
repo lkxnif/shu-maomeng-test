@@ -55,13 +55,13 @@ layout: default
         <div class="col-md-9 project-header">
           <h1>{{ list.project_name }}</h1><h2>{{ list.project_excerpt }}</h2>
           <div class="meta-container">
-            <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
+            <p class="date"><i class="fa-regular fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
             <p class="category">#{{ category.title }}</p>
           </div>
           <hr>
           <a href="javascript:void(0);" class="read-more-less" role="button" rel="nofollow">
-            <div class="read-more"><i class="fa fa-angle-double-down fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_more_text }}</div>
-            <div class="read-less"><i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}</div>
+            <div class="read-more"><i class="fa-solid fa-angles-down fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_more_text }}</div>
+            <div class="read-less"><i class="fa-solid fa-angles-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}</div>
           </a>
         </div>
       </div>
@@ -69,7 +69,7 @@ layout: default
         <div class="markdown-style">
           {{ list.post | markdownify }}
           <a href="javascript:void(0);" class="read-more-less" role="button" rel="nofollow">
-            <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}
+            <i class="fa-solid fa-angles-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].projects.read_less_text }}
           </a>
         </div>
       </div>

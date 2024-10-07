@@ -135,7 +135,7 @@
       ,resultMsgTagName: "p"
       ,resultFoundTitleFormat: '{{ site.data.lang[lng].post-list.upside_down_tabs.msg.resultFoundTitleFormat }}'
       ,resultFoundThumbIcons: {{ site.data.conf.posts.post_query_tabs_item_icons | jsonify }}
-      ,resultFoundThumbTemplate: '<label class="filter-item"><i class="fa-fw {icon} filter-title" aria-hidden="true"></i><p>{value}</p><a class="close-button" href="javascript:void(0);" onclick="PostQuery.showAll();"><i class="fa-fw fa fa-times"></i></a></label>'
+      ,resultFoundThumbTemplate: '<label class="filter-item"><i class="fa-fw {icon} filter-title" aria-hidden="true"></i><p>{value}</p><a class="close-button" href="javascript:void(0);" onclick="PostQuery.showAll();"><i class="fa-solid fa-xmark fa-fw"></i></a></label>'
       ,resultKeyValList: {{ site.data.lang[lng].post-list.upside_down_tabs.msg.property_list | jsonify }}
       ,showAllFunction: "{{ restore_page_content }}"
       /* this setting is only useful on single language site. Hide paginator when post query runs. */

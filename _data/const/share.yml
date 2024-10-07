@@ -9,20 +9,20 @@
 # keys need to match with share. Tooltip definitions in _data/lang/[language].yml file
 
 - twitter:
-  icon: "fa fa-twitter-square"
+  icon: "fa-brands fa-twitter"
   url: "https://twitter.com/intent/tweet?url={url}&text={title}"
 - facebook:
-  icon: "fa fa-facebook-square"
+  icon: "fa-brands fa-facebook"
   url: "https://www.facebook.com/sharer/sharer.php?u={url}"
 - telegram:
-  icon: "fa fa-telegram"
+  icon: "fa-brands fa-telegram"
   url: "https://t.me/share/url?url={url}&text={text}"
 - linkedin:
-  icon: "fa fa-linkedin-square"
+  icon: "fa-brands fa-linkedin"
   url: "https://www.linkedin.com/sharing/share-offsite/?url={url}"
 - email:
-  icon: "fa fa-envelope"
+  icon: "fa-regular fa-envelope"
   url: "mailto:?subject={title}&body={title}%20{url}"
 - copy_link:
-  icon: "fa fa-link"
+  icon: "fa-solid fa-link"
   url: ""

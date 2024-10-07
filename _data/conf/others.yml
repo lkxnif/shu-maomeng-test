@@ -22,7 +22,7 @@ about:
   # to disable icon, comment below
   #sub_title_icon: "fa fa-star"
   # to disable icon, comment below
-  email_icon: "fa fa-envelope-o"
+  email_icon: "fa-regular fa-envelope"
   # to enable contact button, set to true
   show_contact_form_button: true
 

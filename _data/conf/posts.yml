@@ -72,18 +72,18 @@ post_query_tabs_tooltip: true
 
 # upside down tabs settings
 # tab icons
-post_query_tabs_category_tab_icon: "fa fa-list-ul"
-post_query_tabs_tag_tab_icon: "fa fa-tags"
-post_query_tabs_year_tab_icon: "fa fa-calendar"
-post_query_tabs_clear_tab_icon: "fa fa-undo"
-post_query_tabs_close_tab_icon: "fa fa-angle-double-up"
+post_query_tabs_category_tab_icon: "fa-solid fa-list"
+post_query_tabs_tag_tab_icon: "fa-solid fa-tags"
+post_query_tabs_year_tab_icon: "fa-solid fa-calendar-days"
+post_query_tabs_clear_tab_icon: "fa-solid fa-arrow-rotate-left"
+post_query_tabs_close_tab_icon: "fa-solid fa-angles-up"
 
 # items inside tabs
 post_query_tabs_item_icons:
   # keys need to match with /query/post-query.json
-  tags: "fa fa-tag"
-  category: "fa fa-folder-o"
-  year: "fa fa-calendar-o"
+  tags: "fa-solid fa-tag"
+  category: "fa-regular fa-folder"
+  year: "fa-regular fa-calendar"
 
 # hide tab titles
 post_query_tabs_clear_tab_title_visible: false
