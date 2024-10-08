@@ -38,9 +38,9 @@
     ];
 
     // 博客文章页面的正则表达式
-    const BLOG_POST_REGEX = /^\/shu-maomeng\/\d{4}\/\d{2}\/\d{2}\/.+\.html$/;
+    const BLOG_POST_REGEX = /^\/\d{4}\/\d{2}\/\d{2}\/.+\.html$/;
     // Jekyll 分页页面的正则表达式
-    const PAGINATION_REGEX = /^\/shu-maomeng\/page\/\d+\/$/;
+    const PAGINATION_REGEX = /^\/page\/\d+\/$/;
 
     // 允许的主机名白名单
     const HOSTNAME_WHITELIST = [
@@ -137,8 +137,8 @@
                                     const lang = navigator.language || navigator.userLanguage;
                                     return caches.match(
                                         lang.includes('zh') 
-                                        ? '/shu-maomeng/offline.html' 
-                                        : '/shu-maomeng/offline-en.html'
+                                        ? '/offline.html' 
+                                        : '/offline-en.html'
                                     );
                                 });
                         })
@@ -147,8 +147,8 @@
         }
 
         // Fetch 事件中添加的新代码
-        if (event.request.mode === 'navigate' && !url.pathname.startsWith('/shu-maomeng/')) {
-            event.respondWith(caches.match('/shu-maomeng/index.html'));
+        if (event.request.mode === 'navigate' && !url.pathname.startsWith('/')) {
+            event.respondWith(caches.match('/index.html'));
             return;
         }
     });
