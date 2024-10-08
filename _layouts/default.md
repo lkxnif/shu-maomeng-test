@@ -39,10 +39,8 @@ layout: util/compress
     <link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="{{ site.data.owner[lng].brand }}">
     <meta name="mobile-web-app-capable" content="yes">
     <!-- PWA 相关标签结束 -->
-    <meta name="mobile-web-app-capable" content="yes">
    
   </head>
 
