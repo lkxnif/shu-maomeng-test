@@ -21,7 +21,7 @@
   display: none;
   transition: all 0.4s ease;
   margin-left: var(--consent-bar-left-right-margin);
-  color: #ffffff;
+  color: var(--consent-settings-text-color); // 使用与 consent-settings 相同的颜色变量
 }
 
 .consent-bar > .close-button {
