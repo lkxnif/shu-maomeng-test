@@ -21,6 +21,7 @@
   display: none;
   transition: all 0.4s ease;
   margin-left: var(--consent-bar-left-right-margin);
+  color: var(--consent-settings-text-color);
 }
 
 .consent-bar > .close-button {
