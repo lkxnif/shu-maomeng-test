@@ -6,6 +6,7 @@
 /* consent bar */
 .consent-bar {
   @include get_scheme(consent-bar-colors-);
+  @include get_scheme(consent-settings-colors-);
   --consent-bar-left-right-margin: calc(var(--main-container-margin) - 10px);
   z-index: 1003;
   position: fixed;
