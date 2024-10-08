@@ -29,11 +29,11 @@
         '/offline-en.html',
         '/assets/css/main.css',
         '/assets/js/main.js',
-        '/assets/img/favicons/android-chrome-192x192.png',
-        '/assets/img/favicons/android-chrome-512x512.png',
+        '/assets/img/favicons/web-app-manifest-192x192.png',
+        '/assets/img/favicons/web-app-manifest-512x512.png',
         '/assets/img/favicons/apple-touch-icon.png',
-        '/assets/img/favicons/favicon-32x32.png',
-        '/assets/img/favicons/favicon-16x16.png',
+        '/assets/img/favicons/favicon-48x48.png',
+        '/assets/img/favicons/favicon.svg',
         '/assets/img/favicons/site.webmanifest',
     ];
 
@@ -168,4 +168,3 @@
 
     log('Service Worker 已加载');
 
-   
