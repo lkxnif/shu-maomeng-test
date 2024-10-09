@@ -123,7 +123,10 @@ $anchor-text-color-light: #05397f;
 }
 // default/lang-offer
 %lang-offer-colors-light {
-  --lang-offer-header-color: #{$header-color-light};
+  --lang-offer-header-color: #ffffff; // 标题颜色
+  --lang-offer-text-color: #ffffff; // 普通文本颜色
+  --lang-offer-link-color: #ffffff; // 链接颜色
+  --lang-offer-link-hover-color: #ffff00; // 链接悬停颜色
 }
 // common/button
 %button-colors-light {

@@ -42,7 +42,7 @@ creative_commons:
 # seo meta this is needed for each language
 # If meta_description is not defined in front matter, it's created from (post / page) content,
 # if it has no content, this will be used for page description. It is also used in manifest.json
-meta_common_description: "你的自述。"
+meta_common_description: "猫盟信息"
 
 # contact options (side nav bottom and about page)
 # the order of the items will be shown as here.
