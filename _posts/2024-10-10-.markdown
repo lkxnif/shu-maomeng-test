@@ -13,8 +13,3 @@ on_site_search_exclude: false
 search_engine_exclude: false
 lng_pair: id_test
 ---
-*   测试
-    
-*   pages CMS
-    
-*   文章发布
