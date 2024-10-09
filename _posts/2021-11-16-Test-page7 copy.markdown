@@ -7,7 +7,7 @@ title: test
 # if not specified, .name will be used from _data/owner/[language].yml
 #author: ""
 # multiple category is not supported
-category: 猫档案
+category: catinfo
 # multiple tag entries are possible
 tags: [延长]
 # thumbnail image for post
