@@ -103,22 +103,22 @@ content:
         type: file
         path: _config.yml
         fields:
-      - name: title
-        label: 网站标题
-        type: string
-        required: true
-
-      - name: description
-        label: 网站描述
-        type: string
-        required: false
-
-      - name: url
-        label: 网站URL
-        type: string
-        pattern: '^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$'
-        required: true
-
-      - name: cover
-        label: 预览图片
-        type: image
+        - name: title
+          label: 网站标题
+          type: string
+          required: true
+  
+        - name: description
+          label: 网站描述
+          type: string
+          required: false
+  
+        - name: url
+          label: 网站URL
+          type: string
+          pattern: '^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$'
+          required: true
+  
+        - name: cover
+          label: 预览图片
+          type: image
