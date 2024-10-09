@@ -1,0 +1,20 @@
+---
+title: 测试
+meta_description: "pages CMS测试"
+img: ":shu_logo.png"
+date: 2024-10-10
+meta_modify_date: 2024-10-10
+category: catinfo
+tags: yanchang
+comments_disable: false
+image_viewer_on: false
+image_lazy_loader_on: true
+on_site_search_exclude: false
+search_engine_exclude: false
+lng_pair: id_test
+---
+*   测试
+    
+*   pages CMS
+    
+*   文章发布
