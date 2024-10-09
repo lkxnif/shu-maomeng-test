@@ -38,12 +38,11 @@ content:
         type: select
         options:
           values:
-          - value: activity
-            label: 活动
           - value: catinfo
             label: 猫档案
+          - value: activity
+            label: 活动
         required: true
-        default: activity
 
       - name: tags
         label: 标签
@@ -56,7 +55,7 @@ content:
             label: 宝山校区
           - value: jiading
             label: 嘉定校区
-        required: false
+        required: true
 
       - name: comments_disable
         label: 禁用评论
