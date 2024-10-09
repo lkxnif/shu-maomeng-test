@@ -7,9 +7,9 @@ title: test
 # if not specified, .name will be used from _data/owner/[language].yml
 #author: ""
 # multiple category is not supported
-category: auto generated
+category: 猫档案
 # multiple tag entries are possible
-tags: [jekyll, sample]
+tags: [延长]
 # thumbnail image for post
 img: ":post_pic3.jpg"
 # disable comments on this page
