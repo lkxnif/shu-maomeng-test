@@ -10,7 +10,7 @@ content:
     fields:
       - name: lng_pair
         label: 多语言页面配对ID
-        type: text
+        type: string
         required: true
 
       - name: title
@@ -30,7 +30,7 @@ content:
 
       - name: meta_description
         label: 页面描述
-        type: text
+        type: string
         required: false
 
       - name: category
