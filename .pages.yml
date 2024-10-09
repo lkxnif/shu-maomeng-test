@@ -48,7 +48,6 @@ content:
       - name: tags
         label: 标签
         type: select
-        multiple: true
         options:
           values:
           - value: yanchang
