@@ -187,12 +187,12 @@ side_nav_close_limit: 767px
 side_and_top_nav_buttons:
   - home:
     icon: "fa-solid fa-house"
+  - projects:
+    icon: "fa-solid fa-flag"
   - post-list:
     icon: "fa-solid fa-book-tanakh"
   - archives:
     icon: "fa-solid fa-clock"
-  - projects:
-    icon: "fa-solid fa-flag"
   - links:
     icon: "fa-solid fa-handshake"
   - about:
