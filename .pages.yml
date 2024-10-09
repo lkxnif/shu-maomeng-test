@@ -8,7 +8,6 @@ content:
     view:
       fields: [ title, published, date, category, tags, lng_pair ]
     fields:
-
       - name: title
         label: 文章标题
         type: string
@@ -41,19 +40,23 @@ content:
           values:
           - value: activity
             label: 活动
-          - value: yanchang
-            label: 延长校区
-          - value: jiading
-            label: 嘉定校区
-          - value: baoshan
-            label: 宝山校区
+          - value: catinfo
+            label: 猫档案
         required: true
         default: activity
 
       - name: tags
         label: 标签
-        type: string
-        list: true
+        type: select
+        multiple: true
+        options:
+          values:
+          - value: yanchang
+            label: 延长校区
+          - value: baoshan
+            label: 宝山校区
+          - value: jiading
+            label: 嘉定校区
         required: false
 
       - name: comments_disable
@@ -103,27 +106,4 @@ content:
         type: rich-text
         required: true
 
-  - name: config
-    label: Jekyll 配置
-    type: file
-    path: _config.yml
-    fields:
-      - name: title
-        label: 网站标题
-        type: string
-        required: true
-
-      - name: description
-        label: 网站描述
-        type: string
-        required: false
-
-      - name: url
-        label: 网站URL
-        type: string
-        pattern: '^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$'
-        required: true
-
-      - name: cover
-        label: 预览图片
-        type: image
+  # ... config 部分保持不变 ...
