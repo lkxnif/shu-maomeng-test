@@ -27,34 +27,28 @@ content:
         label: 发布日期
         type: date
         required: true
+        options:
+         format: "yyyy-MM-dd HH:mm:ss xx"
 
       - name: meta_modify_date
         label: 修改日期
         type: date
         required: false
+        options:
+         format: "yyyy-MM-dd HH:mm:ss xx"
 
       - name: category
         label: 分类
         type: select
         options:
-          values:
-          - value: catinfo
-            label: 猫档案
-          - value: activity
-            label: 活动
+          values: [ 猫档案, 活动 ]
         required: true
 
       - name: tags
         label: 校区
         type: select
         options:
-          values:
-          - value: yanchang
-            label: 延长校区
-          - value: baoshan
-            label: 宝山校区
-          - value: jiading
-            label: 嘉定校区
+          values: [ 延长校区, 宝山校区, 嘉定校区 ]
         required: true
 
       - name: comments_disable
