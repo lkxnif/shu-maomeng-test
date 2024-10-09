@@ -4,7 +4,7 @@ content:
   - name: posts
     label: 文章
     type: collection
-    path: 'shu-maomeng/_posts'
+    path: '_posts'
     view:
       fields: [ title, published, date, category, tags, lng_pair ]
     fields:
