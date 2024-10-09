@@ -98,4 +98,3 @@ content:
         type: rich-text
         required: true
 
-  # ... config 部分保持不变 ...
