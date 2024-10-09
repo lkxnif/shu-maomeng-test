@@ -37,6 +37,7 @@ content:
         label: 分类
         type: select
         options:
+          values:
           - value: activity
             label: 活动
           - value: yanchang
