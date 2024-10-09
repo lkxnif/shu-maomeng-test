@@ -8,15 +8,21 @@ content:
     view:
       fields: [ title, published, date, category, tags, lng_pair ]
     fields:
-      - name: lng_pair
-        label: 多语言页面配对ID
-        type: string
-        required: true
 
       - name: title
         label: 文章标题
         type: string
         required: true
+
+      - name: meta_description
+        label: 页面描述
+        type: string
+        required: false
+
+      - name: img
+        label: 缩略图
+        type: image
+        required: false
 
       - name: date
         label: 发布日期
@@ -26,11 +32,6 @@ content:
       - name: meta_modify_date
         label: 修改日期
         type: date
-        required: false
-
-      - name: meta_description
-        label: 页面描述
-        type: string
         required: false
 
       - name: category
@@ -53,11 +54,6 @@ content:
         label: 标签
         type: string
         list: true
-        required: false
-
-      - name: img
-        label: 缩略图
-        type: image
         required: false
 
       - name: comments_disable
@@ -96,6 +92,11 @@ content:
         type: boolean
         required: false
         default: true
+
+      - name: lng_pair
+        label: 多语言页面配对ID
+        type: string
+        required: true
         
       - name: body
         label: 文章内容
