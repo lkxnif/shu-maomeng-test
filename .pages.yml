@@ -45,7 +45,7 @@ content:
         required: true
 
       - name: tags
-        label: 标签
+        label: 校区
         type: select
         options:
           values:
