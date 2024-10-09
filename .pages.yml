@@ -77,7 +77,7 @@ content:
         label: 启用图片懒加载
         type: boolean
         required: false
-        default: false
+        default: true
 
       - name: on_site_search_exclude
         label: 排除站内搜索
@@ -96,6 +96,11 @@ content:
         type: boolean
         required: false
         default: true
+        
+      - name: body
+        label: 文章内容
+        type: rich-text
+        required: true
 
   - name: config
     label: Jekyll 配置
