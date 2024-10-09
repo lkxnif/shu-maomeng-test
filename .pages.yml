@@ -12,7 +12,6 @@ content:
         label: 多语言页面配对ID
         type: text
         required: true
-        instructions: 必须与该页面的翻译配对，名称必须唯一。
 
       - name: title
         label: 文章标题
@@ -23,19 +22,16 @@ content:
         label: 发布日期
         type: date
         required: true
-        instructions: 设置文章的发布日期。
 
       - name: meta_modify_date
         label: 修改日期
         type: date
         required: false
-        instructions: 设置文章的修改日期。
 
       - name: meta_description
         label: 页面描述
         type: text
         required: false
-        instructions: 简要描述页面内容，用于SEO优化。
 
       - name: category
         label: 分类
@@ -50,26 +46,23 @@ content:
           - value: baoshan
             label: 宝山校区
         required: true
-        default: auto_generated
+        default: activity
 
       - name: tags
         label: 标签
         type: string
         list: true
         required: false
-        instructions: 可多选标签，使用逗号分隔。
 
       - name: img
         label: 缩略图
         type: image
         required: false
-        instructions: 上传文章的缩略图。
 
       - name: comments_disable
         label: 禁用评论
         type: boolean
         required: false
-        instructions: 开启则关闭评论功能。
         default: false
 
       # 功能配置
@@ -77,35 +70,30 @@ content:
         label: 启用图片查看器
         type: boolean
         required: false
-        instructions: 开启后在文章中启用图片查看器。
         default: false
 
       - name: image_lazy_loader_on
         label: 启用图片懒加载
         type: boolean
         required: false
-        instructions: 开启后在文章中启用图片懒加载。
         default: false
 
       - name: on_site_search_exclude
         label: 排除站内搜索
         type: boolean
         required: false
-        instructions: 开启后将此文章从站内搜索中排除。
         default: false
 
       - name: search_engine_exclude
         label: 排除搜索引擎
         type: boolean
         required: false
-        instructions: 开启后将此文章从搜索引擎索引中排除。
         default: false
 
       - name: published
         label: 发布状态
         type: boolean
         required: false
-        instructions: 开启后文章将在网站上发布，关闭则不发布。
         default: true
 
   - name: config
@@ -122,18 +110,13 @@ content:
         label: 网站描述
         type: string
         required: false
-        description: 如果页面没有描述，将使用此描述。
 
       - name: url
         label: 网站URL
         type: string
         pattern: '^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$'
         required: true
-        instructions: 请确保URL格式正确，例如：https://maomeng.online
 
       - name: cover
         label: 预览图片
         type: image
-        description: 用于社交网络（如Facebook, Twitter）的社交预览图片。
-
-      # 可根据需要添加其他配置项
