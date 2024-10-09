@@ -11,18 +11,12 @@ date: 2021-08-10 11:32:53 +0900 # 发布日期
 meta_modify_date: 2021-08-10 11:32:53 +0900 # 修改日期
 meta_description: "" # 简要页面内容描述
 
-# optional
-# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
-# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
-#image_viewer_on: true
-# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
-# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
-#image_lazy_loader_on: true
-# exclude from on site search
-#on_site_search_exclude: true
-# exclude from search engines
-#search_engine_exclude: true
-# to disable this page, simply set published: false or delete this file
-#published: false
+# 功能配置
+# 全局开启文件位置：_data/conf/main.yml（全局开启后单篇默认开启）
+#image_viewer_on: true # 图片查看器
+#image_lazy_loader_on: true # 图片懒加载
+#on_site_search_exclude: true # 从站内搜索排除此文章
+#search_engine_exclude: true # 从搜索引擎索引中排除此文章
+#published: false # 开启后不在网站发布文章
 ---
 
