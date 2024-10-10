@@ -1,25 +1,20 @@
 name: Update post modified dates
 
 on:
-  workflow_run:
-    workflows: ["Deploy Jekyll site to Pages"]
-    types:
-      - completed
+  push:
+    branches:
+      - main
+    paths:
+      - '_posts/**'
 
 jobs:
   update-modified-dates:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      
-      - name: Pull latest changes
-        run: |
-          git pull origin main
-          git fetch --all
 
       - name: Update modified dates
         run: |
@@ -27,10 +22,11 @@ jobs:
             if [ -f "$file" ]; then
               file_commit_date=$(git log -1 --format=%ad --date=format:'%Y-%m-%d %H:%M:%S %z' -- "$file")
               if grep -q "^meta_modify_date:" "$file"; then
-                sed -i "/^---/,/^---/{s/^meta_modify_date:.*$/meta_modify_date: $file_commit_date/}" "$file"
+                sed -i "s/^meta_modify_date:.*$/meta_modify_date: $file_commit_date/" "$file"
               else
-                sed -i "/^---/a meta_modify_date: $file_commit_date" "$file"
+                sed -i "1s/^/meta_modify_date: $file_commit_date\n/" "$file"
               fi
+              sed -i '/^---/,/^---/!{/^meta_modify_date:/d}' "$file"
               echo "Updated meta_modify_date for $file"
             fi
           done
