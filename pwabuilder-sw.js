@@ -94,39 +94,57 @@
         const url = new URL(event.request.url);
 
         if (HOSTNAME_WHITELIST.includes(url.hostname)) {
-            // 静态资源：缓存优先，网络兜底
-            if (STATIC_CACHE_URLS.includes(url.pathname) || url.pathname === '/') {
-                event.respondWith(
-                    caches.match(event.request)
-                        .then(cachedResponse => cachedResponse || fetch(event.request)
-                            .then(response => {
-                                return caches.open(CACHE_NAME)
-                                    .then(cache => {
-                                        cache.put(event.request, response.clone());
-                                        return response;
-                                    });
-                            })
-                        )
-                );
-            } 
-            // 博客文章和分页：网络优先，缓存兜底
-            else if (BLOG_POST_REGEX.test(url.pathname) || PAGINATION_REGEX.test(url.pathname)) {
+            // 首页和静态资源：网络优先，缓存兜底，并更新缓存
+            if (STATIC_CACHE_URLS.includes(url.pathname) || url.pathname === '/' || url.pathname === '/index.html') {
                 event.respondWith(
                     fetch(event.request)
                         .then(response => {
-                            return caches.open(CACHE_NAME)
+                            if (!response || response.status !== 200 || response.type !== 'basic') {
+                                return response;
+                            }
+                            const responseToCache = response.clone();
+                            caches.open(CACHE_NAME)
                                 .then(cache => {
-                                    cache.put(event.request, response.clone());
-                                    return response;
+                                    cache.put(event.request, responseToCache);
                                 });
+                            return response;
                         })
                         .catch(() => caches.match(event.request))
                 );
             } 
-            // 其他资源：网络优先，离线页面兜底
+            // 博客文章和分页：网络优先，缓存兜底，并更新缓存
+            else if (BLOG_POST_REGEX.test(url.pathname) || PAGINATION_REGEX.test(url.pathname)) {
+                event.respondWith(
+                    fetch(event.request)
+                        .then(response => {
+                            if (!response || response.status !== 200 || response.type !== 'basic') {
+                                return response;
+                            }
+                            const responseToCache = response.clone();
+                            caches.open(CACHE_NAME)
+                                .then(cache => {
+                                    cache.put(event.request, responseToCache);
+                                });
+                            return response;
+                        })
+                        .catch(() => caches.match(event.request))
+                );
+            } 
+            // 其他资源：网络优先，缓存兜底，离线页面最后兜底
             else {
                 event.respondWith(
                     fetch(event.request)
+                        .then(response => {
+                            if (!response || response.status !== 200 || response.type !== 'basic') {
+                                return response;
+                            }
+                            const responseToCache = response.clone();
+                            caches.open(CACHE_NAME)
+                                .then(cache => {
+                                    cache.put(event.request, responseToCache);
+                                });
+                            return response;
+                        })
                         .catch(() => {
                             return caches.match(event.request)
                                 .then(cachedResponse => {

@@ -116,3 +116,10 @@ layout: util/compress_js
 {%- endif %}
 
 {% include_relative _js/pwa/pwa-features.js %}
+
+// 添加 Service Worker 更新检查代码
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+        registration.update();
+    });
+}
