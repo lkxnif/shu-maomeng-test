@@ -10,7 +10,7 @@ home:
   # to remove limit, please comment it
   new_posts_count_limit: 7
   # header image using img tag with different scaling.
-  header_img_with_img_tag: true
+  header_img_with_img_tag: false
 
 ######################### About ###########################
 
