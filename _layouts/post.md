@@ -10,7 +10,11 @@ layout: default
 
 {% comment %} 处理标签格式 {% endcomment %}
 {% if page.tags %}
-  {% assign tags = page.tags | map: 'to_s' | join: ',' | split: ',' %}
+  {% if page.tags[0].size > 1 %}
+    {% assign tags = page.tags %}
+  {% else %}
+    {% assign tags = page.tags | join: ',' | split: ',' %}
+  {% endif %}
 {% else %}
   {% assign tags = '' %}
 {% endif %}
@@ -25,7 +29,7 @@ layout: default
 {% comment %} 显示标签 {% endcomment %}
 {% if tags != empty %}
 <div class="post-tags">
-  标签: {{ tags | array_to_sentence_string }}
+  标签: [{{ tags | join: ', ' }}]
 </div>
 {% endif %}
 
