@@ -30,19 +30,11 @@ content:
         options:
          format: "yyyy-MM-dd HH:mm:ss xx"
 
-      - name: meta_modify_date
-        label: 修改日期
-        type: date
-        required: false
-        options:
-         format: "yyyy-MM-dd HH:mm:ss xx"
-
-
       - name: category
         label: 分类
         type: select
         options:
-          values: [ 猫档案, 活动 ]
+          values: [ 延长校区, 宝山校区, 嘉定校区 ]
         required: true
 
       - name: tags
