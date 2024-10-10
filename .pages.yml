@@ -45,7 +45,7 @@ content:
           label: 标签选择
           options:
             values: [ 延长校区, 宝山校区, 嘉定校区, 国际交流校区, 医学院校区 ]
-        required: false
+        required: true
         hint: "选择适用的校区标签，可以选择多个。"
 
       - name: comments_disable
