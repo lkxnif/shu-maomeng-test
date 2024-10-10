@@ -38,11 +38,14 @@ content:
         required: true
 
       - name: tags
-        label: 校区
-        type: select
-        options:
-          values: [ 延长校区, 宝山校区, 嘉定校区 ]
-        required: true
+        label: 校区标签
+        type: list
+        of:
+          type: select
+          options:
+            values: [ 延长校区, 宝山校区, 嘉定校区 ]
+        required: false
+        hint: "选择适用的校区标签，可以选择多个。"
 
       - name: comments_disable
         label: 禁用评论
