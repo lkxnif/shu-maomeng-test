@@ -18,13 +18,12 @@ jobs:
 
       - name: Update modified dates
         run: |
+          git_commit_date=$(git log -1 --format=%ad --date=format:'%Y-%m-%d %H:%M:%S %z')
           for file in _posts/*.md _posts/*.markdown; do
             if [ -f "$file" ]; then
-              last_modified=$(git log -1 --format=%ad --date=format:'%Y-%m-%d %H:%M:%S %z' $file)
-              if grep -q "^meta_modify_date:" "$file"; then
-                sed -i "s/^meta_modify_date:.*$/meta_modify_date: $last_modified/" "$file"
-              else
-                sed -i "1s/^/meta_modify_date: $last_modified\n/" "$file"
+              if ! grep -q "^meta_modify_date:" "$file"; then
+                sed -i "1s/^/meta_modify_date: $git_commit_date\n/" "$file"
+                echo "Added meta_modify_date to $file"
               fi
             fi
           done
@@ -34,5 +33,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add _posts
-          git commit -m "Update post modified dates" || echo "No changes to commit"
-          git push
+          git diff-index --quiet HEAD || (git commit -m "Update post modified dates" && git push)
