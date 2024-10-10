@@ -44,7 +44,7 @@ content:
           type: select
           options:
             values: [ 延长校区, 宝山校区, 嘉定校区 ]
-        required: false
+        required: true
 
       - name: comments_disable
         label: 禁用评论
