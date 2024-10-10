@@ -30,7 +30,6 @@ content:
         options:
          format: "yyyy-MM-dd HH:mm:ss xx"
 
-
       - name: meta_modify_date
         label: 修改日期
         type: date
