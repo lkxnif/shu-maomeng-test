@@ -7,7 +7,7 @@ content:
     path: '_posts'
     view:
       fields: [ title, published, date, category, tags ]
-      sort: [ meta_modify_date, title ]
+      sort: [ meta_modify_date, date, title ]
     fields:
       - name: title
         label: 文章标题
