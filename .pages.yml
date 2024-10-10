@@ -6,13 +6,19 @@ content:
     type: collection
     path: '_posts'
     view:
-      fields: [ title, published, meta_modify_date, category, tags ]
+      fields: [ title, published, date, category, tags ]
+      sort: [ meta_modify_date, title ]
     fields:
       - name: title
         label: 文章标题
         type: string
         required: true
 
+      - name: author
+        label: 作者
+        type: string
+        required: false
+        
       - name: meta_description
         label: 页面简述
         type: string
