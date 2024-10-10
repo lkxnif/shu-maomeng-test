@@ -9,6 +9,10 @@ layout: default
 {%- assign lng = get_lng -%}
 {%- include post_common/post-main.html post = page -%}
 
+{% if page.meta_modify_date %}
+<p class="last-modified-date">修改时间: {{ page.meta_modify_date | date: "%Y-%m-%d %H:%M:%S %z" }}</p>
+{% endif %}
+
 {%-comment-%} Pagination {%-endcomment-%}
 {% if site.posts.size > 1 -%}
   {% include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}

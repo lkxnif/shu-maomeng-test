@@ -1,0 +1,38 @@
+name: Update post modified dates
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_posts/**'
+
+jobs:
+  update-modified-dates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Update modified dates
+        run: |
+          for file in _posts/*.md _posts/*.markdown; do
+            if [ -f "$file" ]; then
+              last_modified=$(git log -1 --format=%ad --date=format:'%Y-%m-%d %H:%M:%S %z' $file)
+              if grep -q "^meta_modify_date:" "$file"; then
+                sed -i "s/^meta_modify_date:.*$/meta_modify_date: $last_modified/" "$file"
+              else
+                sed -i "1s/^/meta_modify_date: $last_modified\n/" "$file"
+              fi
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _posts
+          git commit -m "Update post modified dates" || echo "No changes to commit"
+          git push
