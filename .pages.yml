@@ -6,7 +6,7 @@ content:
     type: collection
     path: '_posts'
     view:
-      fields: [ title, published, date, category, tags, lng_pair ]
+      fields: [ title, published, meta_modify_date, category, tags ]
     fields:
       - name: title
         label: 文章标题
