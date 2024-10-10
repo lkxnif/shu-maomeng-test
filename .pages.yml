@@ -1,4 +1,4 @@
-media: assets
+media: assets/upload
 
 content:
   - name: posts
@@ -14,12 +14,12 @@ content:
         required: true
 
       - name: meta_description
-        label: 页面描述
+        label: 页面简述
         type: string
         required: false
 
       - name: img
-        label: 缩略图
+        label: 图片
         type: image
         required: false
 
@@ -48,8 +48,9 @@ content:
             - 嘉定校区
             - 待领养
             - 已领养
+            - 待绝育
+            - 已绝育
         required: true
-
 
       - name: comments_disable
         label: 禁用评论
@@ -57,7 +58,6 @@ content:
         required: false
         default: false
 
-      # 功能配置
       - name: image_viewer_on
         label: 启用图片查看器
         type: boolean
@@ -87,6 +87,12 @@ content:
         type: boolean
         required: false
         default: true
+
+      - name: archive
+        label: 归档至回溯
+        type: boolean
+        required: false
+        default: false
 
       - name: lng_pair
         label: 多语言页面配对ID
