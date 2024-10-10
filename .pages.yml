@@ -28,7 +28,7 @@ content:
         type: date
         required: true
         options:
-         format: "yyyy-MM-dd HH:mm:ss +0900"
+         format: "yyyy-MM-dd HH:mm:ss xx"
 
 
       - name: meta_modify_date
@@ -36,7 +36,7 @@ content:
         type: date
         required: false
         options:
-         format: "yyyy-MM-dd HH:mm:ss +0900"
+         format: "yyyy-MM-dd HH:mm:ss xx"
 
 
       - name: category
