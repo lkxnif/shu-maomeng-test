@@ -7,10 +7,26 @@ layout: default
 ---
 {%- include multi_lng/get-lng-by-url.liquid -%}
 {%- assign lng = get_lng -%}
+
+{% comment %} 处理标签格式 {% endcomment %}
+{% if page.tags %}
+  {% assign tags = page.tags | map: 'to_s' | join: ',' | split: ',' %}
+{% else %}
+  {% assign tags = '' %}
+{% endif %}
+
 {%- include post_common/post-main.html post = page -%}
 
+{% comment %} 显示修改时间 {% endcomment %}
 {% if page.meta_modify_date %}
 <p class="last-modified-date">修改时间: {{ page.meta_modify_date | date: "%Y-%m-%d %H:%M:%S %z" }}</p>
+{% endif %}
+
+{% comment %} 显示标签 {% endcomment %}
+{% if tags != empty %}
+<div class="post-tags">
+  标签: {{ tags | array_to_sentence_string }}
+</div>
 {% endif %}
 
 {%-comment-%} Pagination {%-endcomment-%}
@@ -23,6 +39,7 @@ layout: default
   {% endif -%}
 {% endif -%}
 
+{% comment %} 评论系统 {% endcomment %}
 {% if site.data.conf.posts.comments.engine != empty
   and site.data.conf.posts.comments.engine != nil
   and page.comments_disable != true
