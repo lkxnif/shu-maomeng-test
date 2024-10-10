@@ -10,6 +10,7 @@ img: ":catUnion_logo.png" # post缩略图
 date: 2024-08-10 11:32:53 +0900 # 发布日期
 meta_modify_date: 2024-10-10 14:56:30 +0000
 meta_description: "" # 简要页面内容描述
+archive: false # 是否归档
 
 # 功能配置
 # 全局开启文件位置：_data/conf/main.yml（全局开启后单篇默认开启）
