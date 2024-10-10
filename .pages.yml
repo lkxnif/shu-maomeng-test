@@ -34,19 +34,14 @@ content:
         label: 分类
         type: select
         options:
-          values: [ 延长校区, 宝山校区, 嘉定校区 ]
+          values: [ 猫档案, 活动 ]
         required: true
 
       - name: tags
-        label: 校区标签
-        type: list
-        of:
-          type: select
-          label: 标签选择
-          options:
-            values: [ 延长校区, 宝山校区, 嘉定校区, 国际交流校区, 医学院校区 ]
+        label: 标签
+        type: string
+        list: true
         required: true
-        hint: "选择适用的校区标签，可以选择多个。"
 
       - name: comments_disable
         label: 禁用评论
