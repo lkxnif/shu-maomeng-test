@@ -25,9 +25,9 @@ content:
         required: false
 
       - name: img
-        label: 图片
+        label: 封面图
         type: image
-        required: false
+        required: true
 
       - name: date
         label: 发布日期
@@ -107,12 +107,7 @@ content:
         options:
          format: "yyyy-MM-dd HH:mm:ss xx"
 
-      - name: lng_pair
-        label: 多语言页面配对ID
-        type: string
-        required: true
-        
       - name: body
         label: 文章内容
         type: rich-text
-        required: true
+        required: false
