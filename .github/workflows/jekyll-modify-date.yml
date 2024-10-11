@@ -37,7 +37,10 @@ jobs:
                 sed -i "/^---/a meta_modify_date: $file_commit_date" "$file"
               fi
               
-              echo "Updated meta_modify_date for $file"
+              # 删除内容中的 meta_modify_date 行
+              sed -i '/^---/,/^---/!{/^meta_modify_date:/d}' "$file"
+              
+              echo "Updated meta_modify_date and cleaned content for $file"
             fi
           done
 
