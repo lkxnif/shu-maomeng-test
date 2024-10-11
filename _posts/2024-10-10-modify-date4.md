@@ -1,7 +1,7 @@
 ---
-meta_modify_date: 2024-10-10 23:02:06 +0800
+meta_modify_date: 2024-10-09 23:02:06 +0800
 title: modify date4
-date: 2024-10-10 00:00:00 +0000
+date: 2024-10-09 00:00:00 +0000
 category: 延长校区
 tags: 延长校区
 comments_disable: false
