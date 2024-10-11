@@ -11,21 +11,30 @@ layout: default
 
 <div class="post-list-header"></div>
 <div class="post-list-container">
-  {% assign non_archived_posts = paginator.posts | where_exp: "post", "post.archive != true" | sort: "meta_modify_date", "last" | default: "date" | reverse %}
-  {% for post in non_archived_posts -%}
-    {% include post-list/post-thumbnail-data.liquid post = post -%}
-    {% include post-list/post-thumbnail-html.html
-      url = post_url
-      image = image
-      max_width = max_width
-      display = display
-      title = page_title
-      title_sub = title_sub
-      date = post_date
-      read_time = read_time
-      comment_style = comment_style
-    %}
-  {% endfor -%}
+  {% if paginator.posts %}
+    {% assign non_archived_posts = paginator.posts | where_exp: "post", "post.archive != true" %}
+    {% if non_archived_posts.size > 0 %}
+      {% assign sorted_posts = non_archived_posts | sort: "meta_modify_date", "last" | default: "date" | reverse %}
+      {% for post in sorted_posts %}
+        {% include post-list/post-thumbnail-data.liquid post = post -%}
+        {% include post-list/post-thumbnail-html.html
+          url = post_url
+          image = image
+          max_width = max_width
+          display = display
+          title = page_title
+          title_sub = title_sub
+          date = post_date
+          read_time = read_time
+          comment_style = comment_style
+        %}
+      {% endfor %}
+    {% else %}
+      <p>没有找到非归档的文章。</p>
+    {% endif %}
+  {% else %}
+    <p>没有找到文章。</p>
+  {% endif %}
 </div>
 
 {%-comment-%} Pagination {%-endcomment-%}
