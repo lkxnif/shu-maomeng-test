@@ -95,17 +95,32 @@ def process_file(file_path, is_english):
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(updated_content)
 
-def main():
-    # 获取一周前的日期
+def should_translate(file_path, is_english):
     week_ago = datetime.now() - timedelta(days=7)
+    file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
     
+    if file_mtime <= week_ago:
+        return False
+    
+    # 检查对应的翻译文件是否存在或是否需要更新
+    if is_english:
+        translated_file_path = file_path.replace('en/_posts', '_posts')
+    else:
+        translated_file_path = file_path.replace('_posts', 'en/_posts')
+    
+    if not os.path.exists(translated_file_path):
+        return True
+    
+    translated_mtime = datetime.fromtimestamp(os.path.getmtime(translated_file_path))
+    return file_mtime > translated_mtime
+
+def main():
     # 处理中文文章
     posts_dir = '_posts'
     for filename in os.listdir(posts_dir):
         if filename.endswith(('.md', '.markdown')):
             file_path = os.path.join(posts_dir, filename)
-            file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
-            if file_mtime > week_ago:
+            if should_translate(file_path, is_english=False):
                 process_file(file_path, is_english=False)
     
     # 处理英文文章
@@ -114,8 +129,7 @@ def main():
         for filename in os.listdir(en_posts_dir):
             if filename.endswith(('.md', '.markdown')):
                 file_path = os.path.join(en_posts_dir, filename)
-                file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
-                if file_mtime > week_ago:
+                if should_translate(file_path, is_english=True):
                     process_file(file_path, is_english=True)
 
 if __name__ == "__main__":
