@@ -7,7 +7,7 @@ lng_pair: id_home
 img: ":home-heading.jpg"
 # publish date (used for seo)
 # if not specified, site.time will be used.
-date: 2022-03-03 12:32:00 +0000
+date: 2024-10-10 12:32:00 +0000
 
 # for override items in _data/lang/[language].yml
 #title: My title
@@ -17,7 +17,7 @@ date: 2022-03-03 12:32:00 +0000
 
 # seo
 # if not specified, date will be used.
-meta_modify_date: 2022-03-03 12:32:00 +0000
+meta_modify_date: 2024-10-11 12:32:00 +0000
 # check the meta_common_description in _data/owner/[language].yml
 meta_description: "上海大学校内流浪猫联盟"
 
