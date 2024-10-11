@@ -75,7 +75,7 @@ $anchor-text-color-light: #05397f;
 // default/nav/navigation
 %navigation-colors-light {
   --side-top-nav-brand-text-color: #{$brand-color-light};
-  --side-top-nav-brand-hover-text-color: #{$header-color-light};
+  --side-top-nav-brand-hover-text-color: #ffff00; // 修改这一行
   --side-top-nav-background-color: #{$menu-background-light};
   --side-nav-sub-title-text-color: #FBF1E9;
   --side-nav-copyright-text-color: #{$button-color-light};
