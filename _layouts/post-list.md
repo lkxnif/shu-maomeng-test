@@ -30,10 +30,10 @@ layout: default
         %}
       {% endfor %}
     {% else %}
-      <p>没有找到非归档的文章。</p>
+      <p>{{ site.data.lang[lng].post-list.no_non_archived_posts }}</p>
     {% endif %}
   {% else %}
-    <p>没有找到文章。</p>
+    <p>{{ site.data.lang[lng].post-list.no_posts }}</p>
   {% endif %}
 </div>
 

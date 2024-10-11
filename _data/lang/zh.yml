@@ -134,6 +134,8 @@ post-list:
         year: 年
       # you can use these wildcards, {property} {value} {thumb}
       resultFoundTitleFormat: "{property} : {thumb}"
+  no_non_archived_posts: "没有找到非归档的文章。"
+  no_posts: "没有找到文章。"
 
 # for home layout
 home:

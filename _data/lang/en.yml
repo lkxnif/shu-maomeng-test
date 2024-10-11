@@ -133,6 +133,8 @@ post-list:
         year: Year
       # you can use these wildcards, {property} {value} {thumb}
       resultFoundTitleFormat: "{property} : {thumb}"
+  no_non_archived_posts: "No non-archived posts found."
+  no_posts: "No posts found."
 
 # for home layout
 home:
