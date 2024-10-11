@@ -144,7 +144,7 @@ home:
 
 # for archives layout
 archives:
-  title: 归档
+  title: 回溯
   button_name: 回溯
   page_header: 回溯
 

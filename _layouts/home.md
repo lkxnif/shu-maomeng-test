@@ -6,7 +6,8 @@
 layout: default
 # main page (index.html)
 ---
-{%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
+{%- assign sorted_posts = site.posts | sort: "meta_modify_date", "last" | default: "date" | reverse -%}
+{%- include multi_lng/get-pages-by-lng.liquid pages = sorted_posts -%}
 
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}

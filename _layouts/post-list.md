@@ -11,7 +11,7 @@ layout: default
 
 <div class="post-list-header"></div>
 <div class="post-list-container">
-  {% assign non_archived_posts = paginator.posts | where_exp: "post", "post.archive != true" %}
+  {% assign non_archived_posts = paginator.posts | where_exp: "post", "post.archive != true" | sort: "meta_modify_date", "last" | default: "date" | reverse %}
   {% for post in non_archived_posts -%}
     {% include post-list/post-thumbnail-data.liquid post = post -%}
     {% include post-list/post-thumbnail-html.html
