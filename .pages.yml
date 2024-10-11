@@ -100,6 +100,13 @@ content:
         required: false
         default: false
 
+      - name: archive_date
+        label: 归档时间
+        type: date
+        required: false
+        options:
+         format: "yyyy-MM-dd HH:mm:ss xx"
+
       - name: lng_pair
         label: 多语言页面配对ID
         type: string
