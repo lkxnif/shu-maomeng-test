@@ -8,7 +8,7 @@ layout: default
 ---
 {%- assign archived_posts = site.posts | where: "archive", true -%}
 {%- include multi_lng/get-pages-by-lng.liquid pages = archived_posts -%}
-{%- assign postsByYear = lng_pages | sort: 'date' | reverse | group_by_exp:"post", "post.date | date: site.data.lang[lng].date.year" -%}
+{%- assign postsByYear = lng_pages | sort: 'archive_date', 'last' | default: 'date' | reverse | group_by_exp:"post", "post.archive_date | default: post.date | date: site.data.lang[lng].date.year" -%}
 <div class="multipurpose-container">
   <h1>{{ site.data.lang[lng].archives.page_header }}</h1>
   <div class="archives">
@@ -16,7 +16,7 @@ layout: default
     <div class="year">
       <h2>{{ year.name }}</h2>
       {%- comment %}we can directly filter days. But I wanted to leave in case list by month needs{% endcomment -%}
-      {%- assign postsByMonth = year.items | sort: 'date' | reverse | group_by_exp:"post", "post.date | date: '%m'" -%}
+      {%- assign postsByMonth = year.items | sort: 'archive_date', 'last' | default: 'date' | reverse | group_by_exp:"post", "post.archive_date | default: post.date | date: '%m'" -%}
       {%- for month in postsByMonth -%}
       <div class="month">
         {%- comment %}convert string to integer{% endcomment -%}
@@ -27,7 +27,7 @@ layout: default
         <ul>
         {%- for post in month.items %}
           <li>
-            <span>{{ post.date | date: site.data.lang[lng].date.day }}</span>
+            <span>{{ post.archive_date | default: post.date | date: site.data.lang[lng].date.day }}</span>
             {%- assign page_title = post.title -%}
             {%- include util/auto-content-post-title-rename.liquid title = page_title -%}
             <a href="{{ post.url | relative_url }}">{{ page_title }}</a>

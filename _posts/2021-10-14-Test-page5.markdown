@@ -19,6 +19,7 @@ comments_disable: true
 
 # publish date
 date: 2021-10-14 18:47:35 +0900
+archive_date: 2023-12-31 23:59:59 +0800
 
 # seo
 # if not specified, date will be used.
