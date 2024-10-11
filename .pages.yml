@@ -5,6 +5,7 @@ content:
     label: 文章
     type: collection
     path: '_posts'
+    filename: "{year}-{month}-{day}-{fields.title | replace: ' ', '-' | downcase | truncate: 50, ''}"
     view:
       fields: [ title, published, date, category, tags ]
       sort: [ meta_modify_date, date, title ]
