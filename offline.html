@@ -6,23 +6,13 @@
     <title>离线 - 上海大学猫盟</title>
     <link rel="stylesheet" href="/shu-maomeng/assets/css/main.css">
     <style>
-        :root {
-            --main-background: #ffffff;
-            --text-color: #000000;
-            --header-color: #05397f;
-            --button-color: #B8C8D8;
-            --container-background: #FBF1E9;
-            --anchor-color: #05397f;
-        }
-        
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: var(--main-background);
-            color: var(--text-color);
+            background-color: #f5f5f5;
         }
         .content-wrapper {
             display: flex;
@@ -38,53 +28,52 @@
         }
         .offline-message {
             max-width: 600px;
-            background-color: var(--container-background);
+            background-color: white;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 1px 1px 0 1px #e5e2e2fb;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .centered-logo {
             display: block;
             text-align: center;
             font-size: 2em;
-            color: var(--header-color);
+            color: #05397f;
             text-decoration: none;
             margin-bottom: 30px;
             font-weight: bold;
         }
         h1 {
-            color: var(--header-color);
+            color: #333;
             font-size: 1.8em;
             margin-bottom: 20px;
             text-align: center;
         }
         p {
-            color: var(--text-color);
+            color: #666;
             font-size: 1.1em;
             line-height: 1.6;
             margin-bottom: 15px;
         }
         button {
-            background-color: var(--button-color);
-            color: var(--header-color);
+            background-color: #05397f;
+            color: white;
             border: none;
             padding: 12px 24px;
             font-size: 1em;
             border-radius: 4px;
             cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s;
             display: block;
             margin: 30px auto 0;
         }
         button:hover {
-            background-color: var(--header-color);
-            color: #ffffff;
+            background-color: #1565c0;
         }
         footer {
             text-align: right;
             padding: 20px;
-            background-color: var(--main-background);
-            color: #6B6B6B;
+            background-color: #f0f0f0;
+            color: #666;
         }
     </style>
 </head>
