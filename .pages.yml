@@ -40,7 +40,7 @@ content:
         label: 分类
         type: select
         options:
-          values: [ 猫档案, 活动 ]
+          values: [ 猫档案, 活动, 报告 ]
         required: true
 
       - name: tags
