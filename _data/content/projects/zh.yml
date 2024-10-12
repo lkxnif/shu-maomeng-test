@@ -12,24 +12,23 @@ page_data:
     back_color: "浅蓝色"
 
   category:
-    - title: "示例"
-      type: id_example
+    - title: "救助"
+      type: id_help
       color: "gray"
-    - title: "图片"
-      type: id_picture
+    - title: "领养"
+      type: id_adopt
       color: "#62b462"
-    - title: "引用"
-      type: id_quote
+    - title: "科养"
+      type: id_foster
       color: "#2FD0ED"
 
   list:
-    # example
-    - type: id_example
-      project_name: "项目示例"
-      project_excerpt: "示例"
+    - type: id_help
+      project_name: "禁忌食物"
+      project_excerpt: "救助"
       img: ":project1_thumb.jpg"
       img_title: "img title1"
-      date: "2021-03-13"
+      date: "2024-10-12"
       post: |
         # Examples
 
@@ -172,12 +171,12 @@ page_data:
         ```
 
     # picture
-    - type: id_picture
-      project_name: "项目示例"
-      project_excerpt: "图片"
+    - type: id_help
+      project_name: "校内喂食指南"
+      project_excerpt: "救助"
       img: ":project2_thumb.jpg"
       img_title: "img title2"
-      date: "2021-04-23"
+      date: "2024-10-12"
       post: |
         # Title
         This is project content.
@@ -185,12 +184,12 @@ page_data:
         ![Image](:project2_thumb.jpg)
 
     # quote
-    - type: id_quote
-      project_name: "项目示例"
-      project_excerpt: "William Shakespeare"
+    - type: id_adopt
+      project_name: "领养须知"
+      project_excerpt: "领养"
       #img: ":project1_thumb.jpg"
       #img_title: "img title3"
-      date: "2021-05-27"
+      date: "2024-10-12"
       post: |
         Let me not to the marriage of true minds
         Admit impediments. Love is not love
