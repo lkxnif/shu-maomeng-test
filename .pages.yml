@@ -55,8 +55,8 @@ content:
             - 嘉定校区
             - 待领养
             - 已领养
-            - 待绝育
             - 已绝育
+            - 失踪中
         required: true
 
       - name: comments_disable
