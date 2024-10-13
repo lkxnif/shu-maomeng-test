@@ -59,11 +59,11 @@ content:
             - 失踪中
         required: true
 
-      - name: comments_disable
-        label: 禁用评论
+      - name: auto_translate
+        label: 自动翻译英文版
         type: boolean
         required: false
-        default: false
+        default: true
 
       - name: image_viewer_on
         label: 启用图片查看器
@@ -85,6 +85,12 @@ content:
 
       - name: search_engine_exclude
         label: 排除搜索引擎
+        type: boolean
+        required: false
+        default: false
+
+      - name: comments_disable
+        label: 禁用评论
         type: boolean
         required: false
         default: false
