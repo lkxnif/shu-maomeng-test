@@ -7,7 +7,7 @@
 (function () {
   'use strict';
 
-  const debug = 0;
+  const debug = 1;
   let logger = function () { };
   if (debug == 1) {
     logger = function (str) { console.log(str); };
