@@ -7,12 +7,6 @@
 (function () {
   'use strict';
 
-  const debug = 0;
-  let logger = function () { };
-  if (debug == 1) {
-    logger = function (str) { console.log(str); };
-  }
-
   const outMode = { paginator: 1, scroll_to_load: 2 };
 
   var globals = {
@@ -48,7 +42,6 @@
   properties.resultStartUpDisplayMode = "";
   properties.resultQueryDisplayMode = "";
 
-
   /* globals */
   var jsonData = '';
   /* scroll_to_load opt, post holder */
@@ -60,7 +53,6 @@
   var page_cnt = 0;
   /* holds html initial page */
   var startup_ResultList_html = null;
-
 
   function isEmpty(value) {
     if (value === "" || value === null || typeof value === "undefined") return true;
@@ -135,7 +127,7 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-     
+      /* 筛选掉 archive 为 true 的文章 */
       if (post.archive === true) {
         continue;
       }
@@ -304,7 +296,6 @@
   $(function () {
     function loadJsonFile() {
       if (isEmpty(properties.jsonPath)) {
-        logger("jsonPath is not set");
         return;
       }
       /* load json */
@@ -315,7 +306,6 @@
         })
         .fail(function (jqxhr, textStatus, error) {
           var err = textStatus + ", " + error;
-          logger("getJSON Failed: " + err);
         });
     }
 
@@ -340,7 +330,6 @@
 
     getPageContent();
     loadJsonFile();
-    logger("PostQuery Debug");
   });
 
   (function (window) {
