@@ -127,7 +127,7 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* 筛选掉 archive 为 true 的文章 */
+      
       if (post.archive === true) {
         continue;
       }
