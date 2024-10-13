@@ -233,7 +233,7 @@
     }
   }
 
-  function runQuery(property, value, resultFoundTitleFormat = properties.resultFoundTitleFormat, mode = properties.resultQueryDisplayMode, postsToFilter = jsonData) {
+  function runQuery(property, value, resultFoundTitleFormat = properties.resultFoundTitleFormat, mode = properties.resultQueryDisplayMode) {
     let resultList = cleanContainer(properties.resultListName);
     if (resultList == null) return;
     let resultHeader = cleanContainer(properties.resultHeaderName);
@@ -244,7 +244,9 @@
     postList.length = 0;
     page_cnt = 0;
 
-    let posts = filterQuery(postsToFilter, property, value);
+    // 首先过滤掉已归档的帖子
+    let nonArchivedPosts = jsonData.filter(post => post.archive !== true);
+    let posts = filterQuery(nonArchivedPosts, property, value);
 
     if (posts.length == 0) {
       setQueryResultNotFoundMsg(resultHeader, property, value);
