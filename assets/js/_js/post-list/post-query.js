@@ -135,11 +135,8 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      // 排除 archive 为 true 的帖子或没有指定属性的帖子
-      if (post.archive === true || post.archive === 'true' || typeof post[property] === 'undefined') {
-        continue;
-      }
-
+      /* if it doesn't have any item, pass it */
+      if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
       /* if it doesn't have any item, pass it */
       if (prop[0] == '') continue;
