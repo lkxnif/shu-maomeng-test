@@ -133,27 +133,21 @@
   }
 
   function filterQuery(posts, property, value) {
-    console.log(`Filtering posts for property: ${property}, value: ${value}`); // 添加日志
     let queryResult = [];
     for (let post of posts) {
-      // 首先检查帖子是否被归档
-      if (post.archive === true) {
-        console.log(`Skipping archived post: ${post.title}`); // 添加日志
-        continue;
-      }
-      
+      /* if it doesn't have any item, pass it */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
+      /* if it doesn't have any item, pass it */
       if (prop[0] == '') continue;
       for (let item of prop) {
         if (machValue(item, value) == true) {
-          console.log(`Adding post to result: ${post.title}`); // 添加日志
           queryResult.push(post);
+          /* prevent duplicates, add post once */
           break;
         }
       }
     }
-    console.log(`Filtered posts count: ${queryResult.length}`); // 添加日志
     return queryResult;
   }
 
@@ -235,8 +229,6 @@
   }
 
   function runQuery(property, value, resultFoundTitleFormat = properties.resultFoundTitleFormat, mode = properties.resultQueryDisplayMode) {
-    console.log(`Running query for property: ${property}, value: ${value}`); // 添加日志
-
     let resultList = cleanContainer(properties.resultListName);
     if (resultList == null) return;
     let resultHeader = cleanContainer(properties.resultHeaderName);
@@ -250,7 +242,6 @@
     let posts = filterQuery(jsonData, property, value);
 
     if (posts.length == 0) {
-      console.log('No posts found after filtering'); // 添加日志
       setQueryResultNotFoundMsg(resultHeader, property, value);
     } else {
       if (mode == outMode.paginator) {
@@ -315,8 +306,6 @@
       $.getJSON(properties.jsonPath)
         .done(function (data_arry) {
           jsonData = data_arry;
-          console.log(`Loaded ${jsonData.length} posts from JSON`); // 添加日志
-          console.log(`Non-archived posts: ${jsonData.filter(post => !post.archive).length}`); // 添加日志
           $(window).trigger('post-query-ready');
         })
         .fail(function (jqxhr, textStatus, error) {
