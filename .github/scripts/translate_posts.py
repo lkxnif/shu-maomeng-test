@@ -14,7 +14,7 @@ def generate_lng_pair(filename, title):
     safe_title = re.sub(r'[-\s]+', '-', safe_title).strip('-')
     return f"id_{base_name}_{safe_title}"
 
-def translate_text(text, from_lang, to_lang):
+def translate_text(text, from_lang='zh-Hans', to_lang='en'):
     try:
         endpoint = "https://api.cognitive.microsofttranslator.com"
         path = '/translate'
@@ -45,7 +45,7 @@ def translate_text(text, from_lang, to_lang):
         print(f"翻译错误: {e}")
         return text  # 返回原文，而不是中断整个过程
 
-def process_file(file_path, is_english):
+def process_file(file_path):
     print(f"处理文件: {file_path}")
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -65,37 +65,26 @@ def process_file(file_path, is_english):
         title = front_matter.get('title', 'untitled')
         front_matter['lng_pair'] = generate_lng_pair(filename, title)
     
-    # 设置翻译方向
-    from_lang = 'en' if is_english else 'zh-Hans'
-    to_lang = 'zh-Hans' if is_english else 'en'
-    
     # 翻译内容
-    translated_content = translate_text(remaining_content, from_lang, to_lang)
+    translated_content = translate_text(remaining_content)
     
     # 创建翻译版本的front matter
     translated_front_matter = front_matter.copy()
-    translated_front_matter['title'] = translate_text(front_matter['title'], from_lang, to_lang)
+    translated_front_matter['title'] = translate_text(front_matter['title'])
     
     # 生成新的文件内容
     new_content = "---\n" + yaml.dump(translated_front_matter, allow_unicode=True) + "---\n" + translated_content
     
     # 保存翻译版本
-    if is_english:
-        translated_file_path = file_path.replace('en/_posts', '_posts')
-    else:
-        translated_file_path = file_path.replace('_posts', 'en/_posts')
+    translated_file_path = file_path.replace('_posts', 'en/_posts')
     
     os.makedirs(os.path.dirname(translated_file_path), exist_ok=True)
     with open(translated_file_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    # 更新原文件的front matter（如果有变化）
-    updated_content = "---\n" + yaml.dump(front_matter, allow_unicode=True) + "---\n" + remaining_content
-    if content != updated_content:
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(updated_content)
+    print(f"已翻译并保存: {translated_file_path}")
 
-def should_translate(file_path, is_english):
+def should_translate(file_path):
     week_ago = datetime.now() - timedelta(days=7)
     file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
     
@@ -103,10 +92,7 @@ def should_translate(file_path, is_english):
         return False
     
     # 检查对应的翻译文件是否存在或是否需要更新
-    if is_english:
-        translated_file_path = file_path.replace('en/_posts', '_posts')
-    else:
-        translated_file_path = file_path.replace('_posts', 'en/_posts')
+    translated_file_path = file_path.replace('_posts', 'en/_posts')
     
     if not os.path.exists(translated_file_path):
         return True
@@ -115,22 +101,24 @@ def should_translate(file_path, is_english):
     return file_mtime > translated_mtime
 
 def main():
-    # 处理中文文章
+    # 只处理中文文章
     posts_dir = '_posts'
     for filename in os.listdir(posts_dir):
         if filename.endswith(('.md', '.markdown')):
             file_path = os.path.join(posts_dir, filename)
-            if should_translate(file_path, is_english=False):
-                process_file(file_path, is_english=False)
-    
-    # 处理英文文章
-    en_posts_dir = 'en/_posts'
-    if os.path.exists(en_posts_dir):
-        for filename in os.listdir(en_posts_dir):
-            if filename.endswith(('.md', '.markdown')):
-                file_path = os.path.join(en_posts_dir, filename)
-                if should_translate(file_path, is_english=True):
-                    process_file(file_path, is_english=True)
+            
+            # 读取文件的front matter
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                front_matter_match = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
+                if front_matter_match:
+                    front_matter = yaml.safe_load(front_matter_match.group(1))
+                    
+                    # 检查是否需要翻译
+                    if front_matter.get('auto_translate', False) and should_translate(file_path):
+                        process_file(file_path)
+                else:
+                    print(f"警告: 文件 {file_path} 没有有效的front matter")
 
 if __name__ == "__main__":
     main()
