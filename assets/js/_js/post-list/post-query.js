@@ -135,9 +135,6 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      // 首先检查帖子是否被归档
-      if (post.archive === true) continue;
-      
       /* if it doesn't have any item, pass it */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
@@ -227,9 +224,7 @@
     if (properties.showAllFunction == true) {
       restorePageContent();
     } else {
-      // 修改这里,添加一个过滤步骤
-      let nonArchivedPosts = jsonData.filter(post => post.archive !== true);
-      runQuery('year', 'all', "", properties.resultStartUpDisplayMode, nonArchivedPosts);
+      runQuery('year', 'all', "", properties.resultStartUpDisplayMode);
     }
   }
 
@@ -244,9 +239,7 @@
     postList.length = 0;
     page_cnt = 0;
 
-    // 首先过滤掉已归档的帖子
-    let nonArchivedPosts = jsonData.filter(post => post.archive !== true);
-    let posts = filterQuery(nonArchivedPosts, property, value);
+    let posts = filterQuery(jsonData, property, value);
 
     if (posts.length == 0) {
       setQueryResultNotFoundMsg(resultHeader, property, value);
