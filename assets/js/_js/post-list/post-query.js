@@ -3,7 +3,6 @@
  *  Licensed under MIT
 */
 
-
 /* comment at top */
 (function () {
   'use strict';
@@ -136,18 +135,15 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* 排除 archive 为 true 的帖子 */
-      if (post.archive === true) continue;
-
-      /* 如果帖子没有指定的属性，跳过 */
+      /* if it doesn't have any item, pass it */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
-      /* 如果属性值为空，跳过 */
+      /* if it doesn't have any item, pass it */
       if (prop[0] == '') continue;
       for (let item of prop) {
-        if (machValue(item, value) === true) {
+        if (machValue(item, value) == true) {
           queryResult.push(post);
-          /* 防止重复，添加一次后跳出 */
+          /* prevent duplicates, add post once */
           break;
         }
       }
@@ -299,7 +295,6 @@
     if ($(properties.hideElementWhenResultShown).length == 1) $(properties.hideElementWhenResultShown).show();
     $(window).trigger('post-query-done');
   }
-
 
   $(function () {
     function loadJsonFile() {
