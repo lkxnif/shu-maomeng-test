@@ -135,18 +135,18 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* 如果帖子被归档,跳过它 */
+      // 首先检查帖子是否被归档
       if (post.archive === true) continue;
       
-      /* 如果它没有任何项目,跳过它 */
+      /* if it doesn't have any item, pass it */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
-      /* 如果它没有任何项目,跳过它 */
+      /* if it doesn't have any item, pass it */
       if (prop[0] == '') continue;
       for (let item of prop) {
         if (machValue(item, value) == true) {
           queryResult.push(post);
-          /* 防止重复,只添加一次帖子 */
+          /* prevent duplicates, add post once */
           break;
         }
       }
@@ -227,11 +227,13 @@
     if (properties.showAllFunction == true) {
       restorePageContent();
     } else {
-      runQuery('year', 'all', "", properties.resultStartUpDisplayMode);
+      // 修改这里,添加一个过滤步骤
+      let nonArchivedPosts = jsonData.filter(post => post.archive !== true);
+      runQuery('year', 'all', "", properties.resultStartUpDisplayMode, nonArchivedPosts);
     }
   }
 
-  function runQuery(property, value, resultFoundTitleFormat = properties.resultFoundTitleFormat, mode = properties.resultQueryDisplayMode) {
+  function runQuery(property, value, resultFoundTitleFormat = properties.resultFoundTitleFormat, mode = properties.resultQueryDisplayMode, postsToFilter = jsonData) {
     let resultList = cleanContainer(properties.resultListName);
     if (resultList == null) return;
     let resultHeader = cleanContainer(properties.resultHeaderName);
@@ -242,7 +244,7 @@
     postList.length = 0;
     page_cnt = 0;
 
-    let posts = filterQuery(jsonData, property, value);
+    let posts = filterQuery(postsToFilter, property, value);
 
     if (posts.length == 0) {
       setQueryResultNotFoundMsg(resultHeader, property, value);
