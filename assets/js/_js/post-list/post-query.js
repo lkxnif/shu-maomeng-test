@@ -135,19 +135,35 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* if it doesn't have any item, pass it */
-      if (typeof post[property] === 'undefined') continue;
+      // 双重检查：跳过归档的帖子（以防 JSON 数据包含它们）
+      if (post.archive === true || post.archive === 'true') {
+        logger("Skipping archived post:", post.title);
+        continue;
+      }
+
+      // 如果帖子没有指定的属性，跳过
+      if (typeof post[property] === 'undefined') {
+        logger("Skipping post (no property):", post.title);
+        continue;
+      }
+
       let prop = post[property].split(", ");
-      /* if it doesn't have any item, pass it */
-      if (prop[0] == '') continue;
+      // 如果属性值为空，跳过
+      if (prop[0] === '') {
+        logger("Skipping post (empty property):", post.title);
+        continue;
+      }
+
       for (let item of prop) {
-        if (machValue(item, value) == true) {
+        if (machValue(item, value)) {
+          logger("Adding post:", post.title);
           queryResult.push(post);
-          /* prevent duplicates, add post once */
+          // 防止重复，添加一次后跳出
           break;
         }
       }
     }
+    logger("Filter results:", queryResult.length, "posts");
     return queryResult;
   }
 
