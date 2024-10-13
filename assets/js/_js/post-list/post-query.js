@@ -7,7 +7,7 @@
 (function () {
   'use strict';
 
-  const debug = 1;
+  const debug = 0;
   let logger = function () { };
   if (debug == 1) {
     logger = function (str) { console.log(str); };
@@ -135,8 +135,8 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      // 跳过 archive 为 true 的帖子
-      if (post.archive === true || post.archive === 'true') {
+     
+      if (post.archive === true) {
         continue;
       }
       
@@ -144,9 +144,9 @@
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
       /* if it doesn't have any item, pass it */
-      if (prop[0] === '') continue;
+      if (prop[0] == '') continue;
       for (let item of prop) {
-        if (machValue(item, value)) {
+        if (machValue(item, value) == true) {
           queryResult.push(post);
           /* prevent duplicates, add post once */
           break;
@@ -310,15 +310,7 @@
       /* load json */
       $.getJSON(properties.jsonPath)
         .done(function (data_arry) {
-          // 预处理 JSON 数据，确保 archive 属性为布尔值
-          jsonData = data_arry.map(post => {
-            if (post.archive === 'true') {
-              post.archive = true;
-            } else if (post.archive === 'false' || post.archive === undefined) {
-              post.archive = false;
-            }
-            return post;
-          });
+          jsonData = data_arry;
           $(window).trigger('post-query-ready');
         })
         .fail(function (jqxhr, textStatus, error) {
