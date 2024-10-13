@@ -135,15 +135,18 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* if it doesn't have any item, pass it */
+      /* 如果帖子被归档,跳过它 */
+      if (post.archive === true) continue;
+      
+      /* 如果它没有任何项目,跳过它 */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
-      /* if it doesn't have any item, pass it */
+      /* 如果它没有任何项目,跳过它 */
       if (prop[0] == '') continue;
       for (let item of prop) {
         if (machValue(item, value) == true) {
           queryResult.push(post);
-          /* prevent duplicates, add post once */
+          /* 防止重复,只添加一次帖子 */
           break;
         }
       }
