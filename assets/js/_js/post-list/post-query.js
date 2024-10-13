@@ -135,15 +135,20 @@
   function filterQuery(posts, property, value) {
     let queryResult = [];
     for (let post of posts) {
-      /* if it doesn't have any item, pass it */
+      // 排除 archive 为 true 的帖子
+      if (post.archive === true || post.archive === 'true') {
+        continue;
+      }
+
+      /* 如果帖子没有指定的属性，跳过 */
       if (typeof post[property] === 'undefined') continue;
       let prop = post[property].split(", ");
-      /* if it doesn't have any item, pass it */
+      /* 如果属性值为空，跳过 */
       if (prop[0] == '') continue;
       for (let item of prop) {
         if (machValue(item, value) == true) {
           queryResult.push(post);
-          /* prevent duplicates, add post once */
+          /* 防止重复，添加一次后跳出 */
           break;
         }
       }
