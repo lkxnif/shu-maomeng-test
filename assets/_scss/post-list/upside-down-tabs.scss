@@ -189,7 +189,7 @@
 
 .post-tags {
   margin-top: 15px;
-  font-size: 0.9rem;  
+  font-size: 1.2rem;  
   
   .tag {
     display: inline-block;
@@ -201,7 +201,6 @@
     border-radius: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 1px solid #d0d0d0; 
 
     &:hover {
       background-color: #05397f; 
