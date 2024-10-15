@@ -10,9 +10,6 @@ page_data:
     # if you don't want to use background image, comment it. back_color will be activated.
     img: ":projects-heading.jpg"
     back_color: "浅蓝色"
-  
-  # 添加图片查看器设置
-  image_viewer_on: false
 
   category:
     - title: "救助"
