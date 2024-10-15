@@ -178,8 +178,11 @@ $anchor-text-color-dark: #3389de;
   --post-title-text-color: #{$header-color-dark};
   --post-meta-text-color: #b0afaf;
   --tag-background-color: #2a2a2a;
-  --tag-text-color: #ffffff;
-  --tag-hover-background-color: #3a3a3a;
+  --tag-text-color: #71b2ff;
+  --tag-border-color: #3a3a3a;
+  --tag-hover-background-color: #71b2ff;
+  --tag-hover-text-color: #1e1e1e;
+  --tag-icon-color: #71b2ff;
 }
 // common/share
 %share-colors-dark {

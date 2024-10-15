@@ -29,7 +29,6 @@ layout: default
 {% comment %} 显示标签 {% endcomment %}
 {% if tags != empty %}
 <div class="post-tags">
-  标签: 
   {% for tag in tags %}
     <a href="{{ site.baseurl }}/tabs/post-list.html?tag={{ tag | url_encode }}" class="tag">{{ tag }}</a>
   {% endfor %}
