@@ -19,7 +19,7 @@ home:
 
 # about page sub title
 about:
-  sub_title: "$site_sample"
+  sub_title: "本项目现已在 GitHub 上开源，欢迎感兴趣的开发者和用户获取、使用并积极参与社区共建"
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
