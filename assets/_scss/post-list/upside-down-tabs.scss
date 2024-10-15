@@ -213,6 +213,31 @@
   }
 }
 
+.post-tags {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  
+  .tag {
+    display: inline-block;
+    background-color: var(--tag-background-color);
+    color: var(--tag-text-color);
+    padding: 4px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--tag-border-color);
+
+    &:hover {
+      background-color: var(--tag-hover-background-color);
+      color: var(--tag-hover-text-color);
+      transform: translateY(-2px);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  }
+}
+
 @media (max-width: 360px) {
   /* disable icons if page width is too narrow */
   .upside-down-tabs > .nav-tabs > li > a:not(#close_tabs, #clear_filters) > i {
