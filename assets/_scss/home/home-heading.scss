@@ -64,3 +64,8 @@
 .home-intro-text > p:last-child {
   margin-bottom: 0px;
 }
+
+.read-more-link {
+  text-decoration: underline;
+  text-decoration-color: var(--home-read-more-underline-color);
+}
