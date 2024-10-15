@@ -202,12 +202,15 @@
     text-decoration: none;
     transition: all 0.3s ease;
 
+    // 注释掉 hover 效果
+    /*
     &:hover {
       background-color: #05397f; 
       color: #ffffff; 
       transform: translateY(-2px);
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    */
   }
 }
 
