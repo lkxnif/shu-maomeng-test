@@ -46,7 +46,7 @@
   font-weight: 700;
   font-size: 3.5rem;
   margin-top: 0px;
-  color: var(--about-header-title-color);
+  color: $menu-background-light;
   width: calc((100vw - var(--side-nav-width)) / 2);
 }
 
