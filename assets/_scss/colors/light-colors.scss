@@ -220,7 +220,7 @@ $anchor-text-color-light: #05397f;
 // layout: about
 // about/about-style
 %about-style-colors-light {
-  --about-header-title-color: #{$brand-color-light};
+  --about-header-title-color: var(--post-title-text-color); // 使用与 post-list 标题相同的变量
   --about-header-sub-title-color: #808080;
   // currently from multipurpose-container
   //--about-msg-text-color: #7a7979;

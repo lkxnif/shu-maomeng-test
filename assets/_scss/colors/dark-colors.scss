@@ -231,7 +231,7 @@ $anchor-text-color-dark: #3389de;
 // layout: about
 // about/about-style
 %about-style-colors-dark {
-  --about-header-title-color: #{$brand-color-dark};
+  --about-header-title-color: var(--post-title-text-color); // 使用与 post-list 标题相同的变量
   --about-header-sub-title-color: #808080;
   // currently from multipurpose-container
   //--about-msg-text-color: #c0c0c0;
