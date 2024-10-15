@@ -30,7 +30,7 @@ layout: default
 {% if tags != empty %}
 <div class="post-tags">
   {% for tag in tags %}
-    <a href="{{ site.baseurl }}/tabs/post-list.html?tag={{ tag | url_encode }}" class="tag">{{ tag }}</a>
+    <span class="tag">{{ tag }}</span>
   {% endfor %}
 </div>
 {% endif %}
