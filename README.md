@@ -21,39 +21,62 @@
 </div>
 
 
-## 技术支持
+# 安装方式
 
-### 静态网站生成器：jekyll
+## 客户端
+
+* Windows
+* Mac
+
+## 移动端
+
+### 安装端
+
+* PWA应用
+* APK
+
+### ios端
+
+# 技术支持
+
+## 静态网站生成器：jekyll
 
 * 理由
 
-### 网站图标生成器：Real Favicon Generator
+## 网站图标生成器：Real Favicon Generator
 
 * 理由
 
-### 图标库：Font Awesome
+## 图标库：Font Awesome
 
 * 理由
 
-### 徽章生成器：Shields.io
+## 徽章生成器：Shields.io
 
 * 理由
 
-## 使用教程
+# 使用教程
 
-### 如果你希望直接使用
+## 如果你希望直接使用
+
+* 教程
+* 开启讨论
+* workflow修改
+* 侧边栏联系方式
+
+## 如果你希望进行修改
 
 * 教程
 
-### 如果你希望进行修改
+## 如果你希望做出贡献
 
 * 教程
 
-### 如果你希望做出贡献
+## 如果你希望发布至应用商店
 
-* 教程
+* PWABuilder
 
-## 贡献者
+# 贡献者
 
 感谢你们的贡献!
 
@@ -61,7 +84,7 @@
 * 
 * 
 
-## 执照
+# 执照
 
 正如它所说，在 [MIT 许可证](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/LICENSE.txt), 你可以在任何地方使用这个主题，只要你包括许可证和版权声明。
 

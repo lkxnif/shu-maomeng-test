@@ -80,8 +80,8 @@ page_data:
     
 
     # 机构支持
-    - type: id_webdesign
-      title: "虚位以待"
+    - type: id_institutions
+      title: "上海大学"
       url: "https://www.shu.edu.cn/"
-      info: "。"
+      info: "上海大学"
 ---
