@@ -193,19 +193,19 @@
   
   .tag {
     display: inline-block;
-    background-color: #E8C8BE;
-    color: var(--tag-text-color);
+    background-color: #ddf4ff;
+    color: #0969da; 
     padding: 4px 12px;
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 1px solid var(--tag-border-color);
+    border: 1px solid #d0d0d0; 
 
     &:hover {
-      background-color: var(--tag-hover-background-color);
-      color: var(--tag-hover-text-color);
+      background-color: #05397f; 
+      color: #ffffff; 
       transform: translateY(-2px);
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
