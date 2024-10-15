@@ -172,11 +172,11 @@ $anchor-text-color-light: #05397f;
 %post-info-colors-light {
   --post-title-text-color: #{$header-color-light};
   --post-meta-text-color: #808080;
-  --tag-background-color: #E8C8BE;
-  --tag-text-color: #05397f;
-  --tag-border-color: #d0d0d0;
-  --tag-hover-background-color: #05397f;
-  --tag-hover-text-color: #ffffff;
+  --tag-background-color: #05397f; // 修改这里
+  --tag-text-color: #ffffff; // 修改这里
+  --tag-border-color: #05397f; // 修改这里
+  --tag-hover-background-color: #E8C8BE; // 修改这里
+  --tag-hover-text-color: #05397f; // 修改这里
 }
 // common/share
 %share-colors-light {
