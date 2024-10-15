@@ -177,6 +177,9 @@ $anchor-text-color-dark: #3389de;
 %post-info-colors-dark {
   --post-title-text-color: #{$header-color-dark};
   --post-meta-text-color: #b0afaf;
+  --tag-background-color: #1e3a5f;
+  --tag-text-color: #ffffff;
+  --tag-hover-background-color: #2a4d7a;
 }
 // common/share
 %share-colors-dark {

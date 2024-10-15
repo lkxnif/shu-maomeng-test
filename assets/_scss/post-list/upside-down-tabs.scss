@@ -186,6 +186,26 @@
   vertical-align: middle;
 }
 
+.post-tags {
+  margin-top: 10px;
+  
+  .tag {
+    display: inline-block;
+    background-color: var(--tab-button-active-background-color);
+    color: var(--tag-text-color);
+    padding: 4px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--tag-hover-background-color);
+    }
+  }
+}
+
 @media (max-width: 360px) {
   /* disable icons if page width is too narrow */
   .upside-down-tabs > .nav-tabs > li > a:not(#close_tabs, #clear_filters) > i {
