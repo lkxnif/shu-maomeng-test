@@ -18,7 +18,7 @@ page_data:
     - title: "领养"
       type: id_adopt
       color: "#62b462"
-    - title: "科养"
+    - title: "教程"
       type: id_foster
       color: "#2FD0ED"
 
