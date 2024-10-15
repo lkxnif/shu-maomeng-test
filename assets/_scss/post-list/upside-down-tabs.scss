@@ -188,20 +188,22 @@
 
 .post-tags {
   margin-top: 10px;
+  font-size: 0.9rem;
   
   .tag {
     display: inline-block;
-    background-color: var(--tab-button-active-background-color);
+    background-color: var(--tag-background-color);
     color: var(--tag-text-color);
-    padding: 4px 8px;
+    padding: 2px 8px;
     margin-right: 5px;
     margin-bottom: 5px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
     &:hover {
       background-color: var(--tag-hover-background-color);
+      transform: translateY(-1px);
     }
   }
 }

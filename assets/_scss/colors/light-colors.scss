@@ -172,9 +172,9 @@ $anchor-text-color-light: #05397f;
 %post-info-colors-light {
   --post-title-text-color: #{$header-color-light};
   --post-meta-text-color: #808080;
-  --tag-background-color: #05397f;
-  --tag-text-color: #ffffff;
-  --tag-hover-background-color: #0a4f9c;
+  --tag-background-color: #e0e0e0;
+  --tag-text-color: #333333;
+  --tag-hover-background-color: #c0c0c0;
 }
 // common/share
 %share-colors-light {
